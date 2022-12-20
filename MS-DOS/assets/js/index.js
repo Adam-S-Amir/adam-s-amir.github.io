@@ -186,7 +186,7 @@
     Dosbox.prototype.downloadScript = function () {
       this.module.setStatus('Downloading MS-DS');
       this.ui.updateMessage('Downloading MS-DOS');
-      return new Dosbox.Xhr('dos.js', {
+      return new Dosbox.Xhr('./dos.js', {
         success: (function (_this) {
           return function (script) {
             var func;
