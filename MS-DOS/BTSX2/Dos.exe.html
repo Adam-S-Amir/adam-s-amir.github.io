@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from js-dos.com/games/doom.exe.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Apr 2021 16:50:10 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <title>Dos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="On this site you can play in DOOM in browser">
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+
+    <style type="text/css">
+        div.emscripten,
+        .emscripten-status,
+        .emscripten-padding {
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        
+        .fullscreen {
+            display: none;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        
+        .emscripten canvas {
+            border: 0;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar" style="visibility: hidden;">
+    <div class="emscripten-status">
+        Starting MS-DOS...<br/> MS-DOS Version 6.22<br/><br/>
+        <p id="error"></p>
+        <p id="status">Downloading data...</p>
+        <p id="progress">Progress...</p>
+    </div>
+
+    <div>
+        <center>
+            <div id="dosbox"></div>
+        </center>
+        <center><button onclick="dosbox.requestFullScreen();">Make fullscreen</button></center>
+
+        <script src="../assets/js/index.js"></script>
+        <script type="text/javascript">
+            var dosbox = new Dosbox({
+                id: "dosbox",
+                onload: function(dosbox) {
+                    dosbox.run("roms/BTSX2.zip", "./BTSX2.BAT", {
+                        saveFiles: retrieveSaveFiles()
+                    });
+                }
+            });
+
+            window.onunload = function() {
+                storeSaveFiles();
+            }
+
+            function retrieveSaveFiles() {
+                var text = localStorage.getItem("files");
+                if (text) {
+                    var files = JSON.parse(text);
+                    files.forEach(function(file) {
+                        file.data = Uint8Array.from(file.data);
+                    })
+                    return files;
+                }
+            }
+
+            function storeSaveFiles() {
+                var files = dosbox.getSaveFiles("SAVE*");
+                files.forEach(function(file) {
+                    file.data = Array.from(file.data);
+                })
+                localStorage.setItem("files", JSON.stringify(files));
+            }
+        </script>
+    </div>
+    <div class="fullscreen">
+        <a id="fullscreen" href="javascript:void(0);">Fullscreen</a><br/><br/>
+    </div>
+    <div class="emscripten-padding">
+        <strong>NOTES:</strong>
+        <ul>
+            <li>If you have problems with the mouse positioning of the mouse, then try to switching on <b>Fullscreen</b> mode</li>
+            <li>While the browser is loading the program, it may hang up for a while</li>
+            <li>Sometimes you should click on a canvas to capture the mouse</li>
+        </ul>
+    </div>
+
+    <div class="emscripten-padding">
+        <a href="https://adamtrex.azurewebsites.net/index.html">Home</a>
+    </div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery-1.11.2.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js" defer></script>
+
+
+</body>
+
+</html>
