@@ -14,12 +14,13 @@
       color: #ddd;
       border: 0;
       margin: 0;
-      padding: 0;
     }
 
     #splash {
-      margin: 20px;
       color: #ddd;
+      border: 0;
+      margin: 20px;
+      padding: 0;
     }
 
     #playn-root {
@@ -27,15 +28,25 @@
       margin-right: auto;
       width: 800px;
       height: 600px;
-      visibility: hidden
+      visibility: hidden;
+      position: relative;
     }
-    #log{
+
+    #log {
+      margin: 20px;
       color: #06de88;
+      bottom: 0%;
+      position: fixed;
+      visibility: visible;
+    }
+    #download_dialog{
+      display: none;
+      margin: 20px;
     }
   </style>
 </head>
 
-<body>
+<body onload="document.body.scrollTop = document.documentElement.scrollTop = 0;">
   <div id="splash">
     <tt>Welcome to the home of the worlds first <b>FULL VERSION</b> of Quake II running on the web!
       <br>
@@ -60,20 +71,38 @@
       So we'll add support when the corresponding proposal is implemented.
       <br>
       <br>
+      <br>
+      </div>
 
-      <br></tt>
-    <div id="download_dialog" style="display:none">
+    </tt>
+    <div id="download_dialog">
       <tt>
         Play Quake II:<br>
       </tt>
       <input type="hidden" id="source_url" size="100" value="./Quake2.exe">
-      <input id="download_button" type="button" value="Start" onclick="this.disabled=true; downloadAndUnpack()">
-      <br>
+
+      <script>
+        function hide() {
+          var y = document.getElementById("download_dialog");
+          if (y.style.display === "none") {
+            y.style.display = "block";
+          } else {
+            y.style.display = "none";
+          }
+          var x = document.getElementById("splash");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+      </script>
+
+      <input id="download_button" type="button" value="Start" onclick="downloadAndUnpack(); hide();">
     </div>
     <pre id="log">
 </pre>
     <div id="log-bottom"></div>
-  </div>
   <div id='playn-root'></div>
   <script src="./lib/idb.filesystem.js"></script>
   <script src="./lib/zip.js"></script>
@@ -84,26 +113,3 @@
 </body>
 
 </html>
-
-<script type="text/javascript">
-  document.addEventListener('contextmenu', function (e) {
-    e.preventDefault();
-  });
-  document.onkeydown = function (e) {
-    if (event.keyCode == 123) {
-      return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-      return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-      return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-      return false;
-    }
-    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-      return false;
-    }
-  }
-</script>

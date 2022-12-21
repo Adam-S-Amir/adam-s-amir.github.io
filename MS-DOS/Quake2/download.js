@@ -139,7 +139,7 @@ function onInitFs(fileSystem) {
   window.quakeFileSystem.root.getFile("splash/wav/btnx.wav", {},
     function() {
       println("Files downloaded and unpacked already.");
-      done();
+      done();    
       // document.getElementById("download_dialog").style.display = "block";
     },
     function() {
