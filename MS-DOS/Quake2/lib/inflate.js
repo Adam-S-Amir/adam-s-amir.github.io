@@ -1,4 +1,3 @@
-
 (function (obj) {
 
 	// Global

@@ -1,20 +1,3 @@
-/*!
- * jQLite JavaScript Library v1.1.1 (http://code.google.com/p/jqlite/)
- * Copyright (c) 2010 Brett Fattori (bfattori@gmail.com)
- * Licensed under the MIT license
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Many thanks to the jQuery team's efforts.  Some code is
- * Copyright (c) 2010, John Resig.  See
- * http://jquery.org/license
- *
- * @author Brett Fattori (bfattori@gmail.com)
- * @author $Author: bfattori $
- * @version $Revision: 145 $
- *
- * Created: 03/29/2010
- * Modified: $Date: 2010-06-21 11:08:14 -0400 (Mon, 21 Jun 2010) $
- */
 (function () {
   function B() { return +new Date } var D = function (a, b) {
     if (a === "" && b) return b; var d = a.split(" "), c = d.shift(), e; if (c.charAt(0) == "#") { var g = i.getElementById(c.substring(1)); e = g ? [g] : [] } else {
@@ -104,7 +87,7 @@
         toggleClass: function (a) { return this.each(function () { if (this.className.length == 0) this.className = a; else { var b = this.className.split(" "), d = f.inArray(a, b); d != -1 ? b.splice(d, 1) : b.push(a); this.className = b.join(" ") } }) }, hide: function (a) { return this.each(function () { if (this.style && this.style.display != null) if (this.style.display.toString() != "none") { this._oldDisplay = this.style.display.toString() || (this.nodeName != "span" ? "block" : "inline"); this.style.display = "none" } f.isFunction(a) && a(this) }) }, show: function (a) {
           return this.each(function () {
             this.style.display =
-            (this._oldDisplay && this._oldDisplay != "" ? this._oldDisplay : null) || (this.nodeName != "span" ? "block" : "inline"); f.isFunction(a) && a(this)
+              (this._oldDisplay && this._oldDisplay != "" ? this._oldDisplay : null) || (this.nodeName != "span" ? "block" : "inline"); f.isFunction(a) && a(this)
           })
         }, css: function (a, b) { if (typeof a === "string" && b == null) return this[0].style[I(a)]; else { a = typeof a === "string" ? P(a, b) : a; return this.each(function () { var d = this; typeof d.style != "undefined" && f.each(a, function (c, e) { e = typeof e === "number" ? e + "px" : e; var g = I(c); d.style[g] || (g = c); d.style[g] = e }) }) } }, load: function (a, b, d) {
           if (f.isFunction(b)) { d = b; b = {} } return this.each(function () {
