@@ -24,20 +24,24 @@
     <!-- Le fav and touch icons -->
 
     <style type="text/css">
-      ::-webkit-scrollbar { width: 0; background: transparent; }
+        ::-webkit-scrollbar {
+            width: 0;
+            background: transparent;
+        }
+
         div.emscripten,
         .emscripten-status,
         .emscripten-padding {
             padding-top: 20px;
             padding-left: 20px;
         }
-        
+
         .fullscreen {
             display: none;
             margin-top: 20px;
             margin-left: 20px;
         }
-        
+
         .emscripten canvas {
             border: 0;
         }
@@ -46,7 +50,7 @@
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar" style="visibility: hidden;">
     <div class="emscripten-status">
-        Starting MS-DOS...<br/> MS-DOS Version 6.22<br/><br/>
+        Starting MS-DOS...<br /> MS-DOS Version 6.22<br /><br />
         <p id="error"></p>
         <p id="status">Downloading data...</p>
         <p id="progress">Progress...</p>
@@ -62,14 +66,14 @@
         <script type="text/javascript">
             var dosbox = new Dosbox({
                 id: "dosbox",
-                onload: function(dosbox) {
-                    dosbox.run("roms/QUAKE.zip", "./Quake.bat", {
+                onload: function (dosbox) {
+                    dosbox.run("roms/Quake.zip", "./Quake.bat", {
                         saveFiles: retrieveSaveFiles()
                     });
                 }
             });
 
-            window.onunload = function() {
+            window.onunload = function () {
                 storeSaveFiles();
             }
 
@@ -77,7 +81,7 @@
                 var text = localStorage.getItem("files");
                 if (text) {
                     var files = JSON.parse(text);
-                    files.forEach(function(file) {
+                    files.forEach(function (file) {
                         file.data = Uint8Array.from(file.data);
                     })
                     return files;
@@ -86,7 +90,7 @@
 
             function storeSaveFiles() {
                 var files = dosbox.getSaveFiles("SAVE*");
-                files.forEach(function(file) {
+                files.forEach(function (file) {
                     file.data = Array.from(file.data);
                 })
                 localStorage.setItem("files", JSON.stringify(files));
@@ -94,7 +98,7 @@
         </script>
     </div>
     <div class="fullscreen">
-        <a id="fullscreen" href="javascript:void(0);">Fullscreen</a><br/><br/>
+        <a id="fullscreen" href="javascript:void(0);">Fullscreen</a><br /><br />
     </div>
     <div class="emscripten-padding">
         <strong>NOTES:</strong>

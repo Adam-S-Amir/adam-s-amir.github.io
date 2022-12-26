@@ -171,7 +171,7 @@
         })(this),
         progress: (function (_this) {
           return function (total, current) {
-            return _this.ui.updateMessage("Executing " + "MS-DOS" + " (" + (current * 100 / total | 0) + "%)");
+            return _this.ui.updateMessage("Extracting " + "Assets" + " (" + (current * 100 / total | 0) + "%)");
           };
         })(this)
       });
@@ -184,7 +184,7 @@
     };
 
     Dosbox.prototype.downloadScript = function () {
-      this.module.setStatus('Downloading MS-DS');
+      this.module.setStatus('Downloading MS-DOS');
       this.ui.updateMessage('Downloading MS-DOS');
       return new Dosbox.Xhr('../assets/js/dos.js', {
         success: (function (_this) {
