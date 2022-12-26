@@ -13194,7 +13194,7 @@
           , b = e("./controls/grid")
           , w = e("./dom/pointer")
           , _ = e("./dom/storage")
-          , x = e("../assets/js");
+          , x = e("./js-dos");
         class k {
             constructor() {
                 r(this, "build", i.Build),
@@ -13256,7 +13256,7 @@
         "./graphics/_2d": 161,
         "./graphics/video": 162,
         "./graphics/webgl": 163,
-        "./js-dos": 164,
+        "../assets/js": 164,
         "./network/xhr": 165,
         "./notification/notyf": 166,
         "./persist/save-load": 168,
