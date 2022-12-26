@@ -28,6 +28,7 @@ document.onkeydown = function(e) {
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Mario</title>
     <style type="text/css">
+      ::-webkit-scrollbar { width: 0; background: transparent; }
       .dosbox-container { width: 640px; height: 400px; }    </style>
   </head>
   <body>
@@ -35,7 +36,7 @@ document.onkeydown = function(e) {
     <br/>
     <center><button onclick="dosbox.requestFullScreen();">Make fullscreen</button></center>
  
-    <script type="text/javascript" src="./index.js"></script>
+        <script src="../assets/js/index.js"></script>
       <script type="text/javascript">
         var dosbox = new Dosbox({
           id: "dosbox",
