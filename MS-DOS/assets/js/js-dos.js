@@ -13256,7 +13256,7 @@
         "./graphics/_2d": 161,
         "./graphics/video": 162,
         "./graphics/webgl": 163,
-        "../assets/js": 164,
+        "./js-dos": 164,
         "./network/xhr": 165,
         "./notification/notyf": 166,
         "./persist/save-load": 168,
