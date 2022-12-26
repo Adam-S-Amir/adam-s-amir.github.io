@@ -47,7 +47,7 @@
       bottom: 30%;
       position: fixed;
       visibility: visible;
-      
+
     }
   </style>
 </head>
@@ -89,6 +89,9 @@
 
     <script>
       function trash() {
+        document.addEventListener('contextmenu', function (e) {
+          return true;
+        });
         console.log("Ran")
         // Broadcast that you're opening a page.
         localStorage.openpages = Date.now();
