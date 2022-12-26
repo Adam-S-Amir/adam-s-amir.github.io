@@ -13692,9 +13692,9 @@
                     this.layers.setLoadingMessage("Connecting..."),
                     this.ciPromise = emulators.janus(e);
                 else {
-                    this.layers.setLoadingMessage("Downloading bundle ...");
+                    this.layers.setLoadingMessage("Downloading Assets ...");
                     const i = r.network.resolveBundle(e, {
-                        onprogress: e=>this.layers.setLoadingMessage("Downloading bundle " + e + "%")
+                        onprogress: e=>this.layers.setLoadingMessage("Downloading Assets " + e + "%")
                     })
                       , o = {
                         onExtractProgress: (e,t,n,r)=>{
