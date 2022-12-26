@@ -21,15 +21,17 @@
       border: 0;
       margin: 20px;
       padding: 0;
+      position: absolute;
     }
 
     #playn-root {
+      margin-top: 1px;
       margin-left: auto;
       margin-right: auto;
       width: 800px;
       height: 600px;
       visibility: hidden;
-      position: relative;
+      position: absolute;
     }
 
     #log {
@@ -39,14 +41,15 @@
       position: fixed;
       visibility: visible;
     }
-    #download_dialog{
+
+    #download_dialog {
       display: none;
       margin: 20px;
     }
   </style>
 </head>
 
-<body onload="document.body.scrollTop = document.documentElement.scrollTop = 0;">
+<body>
   <div id="splash">
     <tt>Welcome to the home of the worlds first <b>FULL VERSION</b> of Quake II running on the web!
       <br>
@@ -72,37 +75,75 @@
       <br>
       <br>
       <br>
-      </div>
+  </div>
 
+  </tt>
+  <div id="download_dialog">
+    <tt>
+      Play Quake II:<br>
     </tt>
-    <div id="download_dialog">
-      <tt>
-        Play Quake II:<br>
-      </tt>
-      <input type="hidden" id="source_url" size="100" value="./Quake2.exe">
+    <input type="hidden" id="source_url" size="100" value="./Quake2.exe">
 
-      <script>
-        function hide() {
-          var y = document.getElementById("download_dialog");
-          if (y.style.display === "none") {
-            y.style.display = "block";
-          } else {
-            y.style.display = "none";
+    <script>
+      function trash() {
+        console.log("Ran")
+        // Broadcast that you're opening a page.
+        localStorage.openpages = Date.now();
+        window.addEventListener('storage', function (e) {
+          if (e.key == "openpages") {
+            // Listen if anybody else is opening the same page!
+            localStorage.page_available = Date.now();
           }
-          var x = document.getElementById("splash");
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
+          if (e.key == "page_available") {
+            function getConfirmation() {
+              let tet = ""
+              let i = 0;
+              var retVal = confirm("Close this page because another is already opened.");
+              if (retVal == true) {
+                do {
+                  alert("CLOSE IT!");
+                }
+                while (i < 1);
+                return true;
+              } else {
+                do {
+                  alert("CLOSE IT!");
+                }
+                while (i < 1);
+                return false;
+              }
+            }
           }
+        }, false);
+      }
+      window.addEventListener("load", (event) => {
+        console.clear();
+        trash();
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        console.warn("page is fully loaded");
+      });
+
+      function hide() {
+        var y = document.getElementById("download_dialog");
+        if (y.style.display === "none") {
+          y.style.display = "block";
+        } else {
+          y.style.display = "none";
         }
-      </script>
+        var x = document.getElementById("splash");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
 
-      <input id="download_button" type="button" value="Start" onclick="downloadAndUnpack(); hide();">
-    </div>
-    <pre id="log">
+    <input id="download_button" type="button" value="Start" onclick="downloadAndUnpack(); hide();">
+  </div>
+  <pre id="log">
 </pre>
-    <div id="log-bottom"></div>
+  <div id="log-bottom"></div>
   <div id='playn-root'></div>
   <script src="./lib/idb.filesystem.js"></script>
   <script src="./lib/zip.js"></script>
