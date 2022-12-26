@@ -12592,7 +12592,7 @@
                 this.video.setAttribute("playsinline", ""),
                 this.video.className = "emulator-video",
                 this.loading = (0,
-                s.createDiv)("emulator-loading", "\n<div class='emulator-loading-inner'>\n<pre class='emulator-loading-pre-1'>\n        _                __\n       (_)____      ____/ /___  _____ _________  ____ ___\n      / / ___/_____/ __  / __ \\/ ___// ___/ __ \\/ __ `__ \\\n     / (__  )_____/ /_/ / /_/ (__  )/ /__/ /_/ / / / / / /\n  __/ /____/      \\__,_/\\____/____(_)___/\\____/_/ /_/ /_/\n /___/\n</pre>\n<pre class='emulator-loading-pre-2'>\n</pre>\n<div class='emulator-loader'>\n</div>\n</div>\n"),
+                s.createDiv)("emulator-loading", "\n<div class='emulator-loading-inner'>\n<pre class='emulator-loading-pre-1'>\n\n\n\n\n\n\n</pre>\n<pre class='emulator-loading-pre-2'>\n</pre>\n<div class='emulator-loader'>\n</div>\n</div>\n"),
                 this.loaderText = this.loading.querySelector(".emulator-loading-pre-2"),
                 this.mouseOverlay = (0,
                 s.createDiv)("emulator-mouse-overlay", ""),
@@ -17654,7 +17654,7 @@ function e(t, n, r) {
             }
         }
         ;
-        const a = "\nPlease visit our website:\n\n        _                __\n       (_)____      ____/ /___  _____ _________  ____ ___\n      / / ___/_____/ __  / __ \\/ ___// ___/ __ \\/ __ `__ \\\n     / (__  )_____/ /_/ / /_/ (__  )/ /__/ /_/ / / / / / /\n  __/ /____/      \\__,_/\\____/____(_)___/\\____/_/ /_/ /_/\n /___/\n"
+        const a = "YO MAMA"
     }
     , {
         "../../http": 144,
@@ -27698,18 +27698,18 @@ function e(t, n, r) {
             if (!0 === e.options().noSocialLinks)
                 return null;
             function t() {
-                e.options().windowOpen("https://discord.com/invite/hMVYEbG", "_blank")
+                e.options().windowOpen("https://adamtrex.azurewebsites.net/index.html", "_blank")
             }
             function n() {
-                e.options().windowOpen("https://t.me/doszonechat", "_blank")
+                e.options().windowOpen("https://adamtrex.azurewebsites.net/index.html", "_blank")
             }
             return !0 === ("networking" === e.sideBarPage) ? (0,
             l.html)(i || (i = s(['\n        <div class="flex flex-row justify-around items-center">\n            <div class="font-bold text-purple-600">Matchmaking:</div>\n            <div class="h-6 w-6 text-gray-600 cursor-pointer" onClick=', ">\n                <", ' class="h-6 w-6" />\n            </div>\n            <div class="h-4 w-4 mt-0.5 text-gray-600 cursor-poiner" onClick=', ">\n                <", ' class="h-4 w-4" />\n            </div>\n        </div>\n    '])), t, c.Icons.Discord, n, c.Icons.Telegram) : (0,
             l.html)(o || (o = s(['\n        <div class="flex flex-row justify-around">\n            <div class="h-6 w-6 -mt-1 text-gray-600 cursor-pointer" onClick=', ">\n                <", ' class="h-6 w-6" />\n            </div>\n            <div class="h-4 w-4 text-gray-600 cursor-pointer" onClick=', ">\n                <", ' class="h-4 w-4" />\n            </div>\n            <div class="h-4 w-4 text-gray-600 cursor-pointer" onClick=', ">\n                <", ' class="h-4 w-4" />\n            </div>\n            <div class="h-6 w-6 -mt-1 text-gray-600 cursor-pointer" onClick=', ">\n                <", ' class="h-6 w-6" />\n            </div>\n        </div>\n    '])), t, c.Icons.Discord, n, c.Icons.Telegram, (function() {
-                e.options().windowOpen("https://twitter.com/intent/user?screen_name=doszone_db", "_blank")
+                e.options().windowOpen("https://adamtrex.azurewebsites.net/index.html", "_blank")
             }
             ), c.Icons.Twitter, (function() {
-                e.options().windowOpen("https://dos.zone/donate/", "_blank")
+                e.options().windowOpen("https://adamtrex.azurewebsites.net/index.html", "_blank")
             }
             ), c.Icons.CurrencyDollar)
         }
