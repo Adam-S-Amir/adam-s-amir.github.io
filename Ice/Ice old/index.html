@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ice Dodo</title>
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- Babylon.js -->
+    <script src="libs/babylon.js"></script>
+    <script src="libs/jquery-3.3.1.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="css/world.css">
+    <link rel="stylesheet" type="text/css" href="css/screen.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <link rel="stylesheet" type="text/css" href="css/tabs.css">
+  </head>
+  <body id="body">
+    <div id="inner_loading">
+        <h1>Ice Dodo ver. 1.0</h1>
+        <h1>LOADING...</h1>
+    </div>
+    <!-- render section -->
+    <canvas id="renderCanvas"></canvas>
+    <button class="button" id="backtomenu2">MENU</button>
+    <!-- controls -->
+    <div id="left" class="mobile_controls">◀</div>
+    <div id="right" class="mobile_controls">▶</div>
+    <!-- popup -->
+    <div id="popup">
+        <center>
+            <div id="cups"></div>
+        </center>
+        <br>
+        <br>
+    </div>
+    <!-- screens -->
+    <div id="screen">
+        <div style="height: 30px;"></div>
+        <h1 id="screen_map_name"></h1>
+        <h1 id="screen_map_about"></h1>
+        <h1 id="screen_dialog"></h1>
+        <h1 id="screen_info"></h1>
+        <table>
+            <tr>
+                <th><button class="button" id="restart">error</button></th>
+                <th><button class="button" id="backtomenu">MENU</button></th>
+            </tr>
+            <tr>
+                <th><i id="shortcut_label">SPACEBAR</i></th>
+                <th><i id="shortcut_label"></i></th>
+            </tr>
+        </table>
+    </div>
+    <table id="menu">
+        <tr>
+            <center><th class="btn" id="settings_btn">SETTINGS</th></center>
+        </tr>
+    </table>
+    <!-- music -->
+    <audio controls id = "audio">
+    <source src="" id="audiosource">
+    </audio>
+    <!-- tabs -->
+
+    <div class='tab' id="notifs_tab" style="visibility: hidden; position: absolute; z-index: -10;">
+        <div class="close_tab"><img src="assets/icons/close.png"></div>
+    </div>
+
+    <div class='tab' id="settings_tab" style="visibility: hidden; position: absolute; z-index: -10;">
+        <div class="close_tab"><img src="assets/icons/close.png"></div>
+        <p class="title">
+            SETTINGS
+        </p>
+        <p>
+            <div class="select_list">
+                MUSIC
+                <div class="select_item" id="musicEnabled_on">
+                    ON
+                </div>
+                <div class="select_item" id="musicEnabled_off">
+                    OFF
+                </div>
+            </div>
+        </p>
+        <p>
+            <div class="select_list">
+                AUTO RESTART
+                <div class="select_item" id="autoRestart_on">
+                    ON
+                </div>
+                <div class="select_item" id="autoRestart_off">
+                    OFF
+                </div>
+            </div>
+        </p>
+        <p>
+            <div class="select_list">
+                TEXTURE
+                <div class="select_item" id="platformTexture_bright">
+                    BRIGHT
+                </div>
+                <div class="select_item" id="platformTexture_dark">
+                    DARK
+                </div>
+            </div>
+        </p>
+        <p class="title">
+            ADVANCED SETTINGS
+        </p>
+        <p>
+            <div class="select_list">
+                MAP SKIN
+                <div class="select_item" id="frameRate_fixed">
+                    SMOOTH
+                </div>
+                <div class="select_item" id="frameRate_vsync">
+                    VSYNC
+                </div>
+            </div>
+        </p>
+    </div>
+
+    <div class='tab arial' id="discord_tab" style="visibility: hidden; position: absolute; z-index: -10;">
+        <div class="close_tab"><img src="assets/icons/close.png"></div>
+    </div>
+
+
+    <!-- game scripts -->
+    <script type="text/javascript" src="js/map_info.js"></script>
+    <script type="text/javascript" src="js/deployment.js"></script>
+    <script type="text/javascript" src="js/sync.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+    <script type="text/javascript" src="js/audio.js"></script>
+    <script type="text/javascript" src="js/size.js"></script>
+    <script type="text/javascript" src="js/change_state.js"></script>
+    <script type="text/javascript" src="js/controls.js"></script>
+    <script type="text/javascript" src="js/decorations.js"></script>
+    <script type="text/javascript" src="js/guardian.js"></script>
+    <script type="text/javascript" src="js/loader.js"></script>
+    <script type="text/javascript" src="js/maker.js"></script>
+    <script type="text/javascript" src="js/alias.js"></script>
+    <script type="text/javascript" src="js/settings.js"></script>
+    <script type="text/javascript" src="js/cleanup.js"></script>
+    <script type="text/javascript" src="js/start.js"></script>
+    <script type="text/javascript" src="js/update.js"></script>
+    <script type="text/javascript" src="js/stats.js"></script>
+    <script type="text/javascript" src="js/screen.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
+    <script type="text/javascript" src="js/boot.js"></script>
+  </body>
+</html>
