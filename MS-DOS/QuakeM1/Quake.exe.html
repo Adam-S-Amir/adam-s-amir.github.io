@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <style>
+    html,
+    body,
+    #jsdos {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #img{
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  </style>
+  <script src="../assets/js/js-dos.js"></script>
+  <link href="../assets/css/js-dos.css" rel="stylesheet">
+</head>
+
+<body>
+  <img id="img" src="../assets/img/enable.png" onclick="start()">
+  <div id="jsdos"></div>
+  <script>
+function start(){
+  emulators.pathPrefix = "../assets/js/";
+    Dos(document.getElementById("jsdos"), {
+    }).run("./bundle.jsdos");
+
+}
+</script>
+</body>
+
+</html>
