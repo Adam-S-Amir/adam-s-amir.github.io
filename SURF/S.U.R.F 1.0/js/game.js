@@ -1014,7 +1014,7 @@
             this.select.setAttribute("style", "opacity: 1;"),
             this.info.setAttribute("style", "opacity: 0;"),
             this.stats.innerHTML = "<div id='distance'><div id='counter'>0%</div><div id='bar-fill'></div></div><div id='lives'></div><div id='powerups'></div><div id='shields'></div>",
-            this.title.innerHTML = "<div id='main'>TITLE</div><div id='cta'>MESSAGE</div>",
+            this.title.innerHTML = "<div id='main'>TITLE</div><div id='cta'>MESSAGE</div><div id='final'>MESSAGE</div>",
             this.select.innerHTML = "<div id='selector'><svg id='arrow-left' width='40px' height='40px' viewBox='0 0 20 20'><path d='M10,5 l-5,5 M5,10 l5,5' stroke='#000000' stroke-linecap='round' stroke-width='1' /></svg><svg id='arrow-right' width='40px' height='40px' viewBox='0 0 20 20'><path d='M10,5 l 5,5 M 15,10 l -5,5' stroke='#000000' stroke-linecap='round' stroke-width='1' /></svg></div>",
             this.defineInterface()
         }
@@ -1030,7 +1030,8 @@
             this.powerups = $("powerups"),
             this.shields = $("shields"),
             this.main = $("main"),
-            this.cta = $("cta")
+            this.cta = $("cta"),
+            this.final = $("final")
         }
         ,
         t.prototype.updateCounter = function() {
@@ -1066,7 +1067,8 @@
         ,
         t.prototype.buildCharacterSelection = function() {
             this.main.innerHTML = "LET'S SURF",
-            this.cta.innerHTML = "USE <span><</span> <span>></span> AND <span>SPACE</span> TO SELECT A SURFER"
+            this.cta.innerHTML = "USE <span><</span> <span>></span> AND <span>SPACE</span> TO SELECT A SURFER",
+            this.final.innerHTML = "TYPE <span>MICROSOFT EDGE</span> & <span>↑</span><span>↑</span><span>↓</span><span>↓</span><span>←</span><span>→</span><span>←</span><span>→</span><span>B</span><span>A</span>"
         }
         ,
         t.prototype.buildStartScreen = function() {
