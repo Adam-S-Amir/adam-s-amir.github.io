@@ -5265,7 +5265,7 @@
   
   function $unpack(this$static){
     $println('Unpacking pak0.pak');
-    $getFile(this$static.afs, 'install/data/baseq2/pak0.pak', new Installer$3_0(this$static));
+    $getFile(this$static.afs, 'baseq2/pak0.pak', new Installer$3_0(this$static));
   }
   
   function $unpacked(this$static){
@@ -48479,7 +48479,7 @@
     image = GL_Find_free_image_t(name_0, type_0);
     name_0 = name_0.toLowerCase();
     d = getImageSize(name_0);
-    !d && (name_0 = 'Install/Data/baseq2/' + name_0);
+    !d && (name_0 = 'baseq2/' + name_0);
     d = getImageSize(name_0);
     if (!d) {
       $println('*** Size not found for ' + name_0);
