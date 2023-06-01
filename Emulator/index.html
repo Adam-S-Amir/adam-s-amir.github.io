@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Emulator</title>
+    <link rel="stylesheet" href="./JS/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <p class="par">Select a game</p>
+        <select id="Packs" class="dropdown">
+            <option>---</option>
+            <optgroup label="SNES">
+                <option id="snes" value="smariokart">Super Mario Kart</option>
+            </optgroup>
+            <optgroup label="N64">
+                <option id="n64" value="mk64">Mario Kart 64</option>
+                <option id="n64" value="mk4">Mortal Kombat 4</option>
+                <option id="n64" value="sm64">Super Mario 64</option>
+            </optgroup>
+            <optgroup label="Nintendo DS">
+                <option id="nds" value="MDKDS">Mario vs. Donkey Kong</option>
+                <option id="nds" value="MKDS">Mario vs. Donkey Kong 2</option>
+                <option id="nds" value="NSMBDS">New Super Mario Bros</option>
+                <option id="nds" value="MKDS">Mario Kart DS</option>
+                <option id="nds" value="MMZX">Mega-Man ZX</option>
+                <option id="nds" value="MMZXA">Mega-Man ZX Advent</option>
+                <option id="nds" value="MMZC">Mega-Man Zero Collection</option>
+            </optgroup>
+            <!-- <optgroup label="Playstation 1">
+                <option id="psx" value="GT2">Gran Turismo 2</option>
+            </optgroup> -->
+        </select>
+        <!-- <div id=box>
+            <input type=file id=input>
+            or drag a ROM file here
+        </div> -->
+        <button onclick="Start();">Start</button>
+    </div>
+    <script>
+        let PackSelect = document.getElementById("Packs");
+        function Start() {
+            // if (PackSelect.selectedIndex !== 0) {
+                let Selected = PackSelect.options[PackSelect.selectedIndex].value;
+                let core = PackSelect.options[PackSelect.selectedIndex].id;
+                let x = document.getElementById("container");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            // }
+            let gname = Selected;
+            let total = `./roms/${gname}.zip`;
+            event.preventDefault();
+            const div = document.createElement("div");
+            const sub = document.createElement("div");
+            const script = document.createElement("script");
+            sub.id = "game";
+            div.id = "display";
+            div.appendChild(sub);
+            document.body.appendChild(div);
+            window.EJS_player = "#game";
+            window.EJS_biosUrl = "";
+            window.EJS_gameUrl = total;
+            window.EJS_core = core;
+            window.EJS_pathtodata = "./JS/";
+            window.EJS_startOnLoaded = true;
+            script.src = "./JS/loader.js";
+            document.body.appendChild(script);
+        }
+    </script>
+    <script src="./JS/jquery.min.js"></script>
+
+</body>
+
+</html>
