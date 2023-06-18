@@ -13949,33 +13949,159 @@
     // -->
   </script>
   <script>
+    // main menu
     // <!--
     function $clinit_Menu() {
       $clinit_Menu = nullMethod;
       var n, n0, n1;
-      MAIN_MENU_NAMES_NOMULTI = initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['m_main_game', 'm_main_options', 'm_main_quit', 'm_main_multiplayer', 'm_main_video']);
+      MAIN_MENU_NAMES_NOMULTI = initValues(
+        _3Ljava_lang_String_2_classLit, makeCastMap(
+          [
+            Q$Serializable,
+            Q$Serializable_$1,
+            Q$CharSequence_$1,
+            Q$Cloneable,
+            Q$Comparable_$1,
+            Q$Object_$1,
+            Q$String_$1
+          ]), Q$String, [
+          'm_main_game',
+          'm_main_options',
+          'm_main_quit',
+          'm_main_multiplayer',
+          'm_main_video'
+        ]);
       MAIN_MENU_NAMES = MAIN_MENU_NAMES_NOMULTI;
-      m_layers = initDim(_3Lcom_googlecode_playnquake_core_client_Menu$menulayer_1t_2_classLit, makeCastMap([Q$Serializable, Q$Cloneable, Q$Object_$1]), Q$Menu$menulayer_t, 8, 0);
+      m_layers = initDim(
+        _3Lcom_googlecode_playnquake_core_client_Menu$menulayer_1t_2_classLit, makeCastMap([Q$Serializable, Q$Cloneable, Q$Object_$1]), Q$Menu$menulayer_t, 8, 0
+      );
       Menu_Main = new Menu$3_0;
       s_multiplayer_menu = new Menu$menuframework_s_0;
       s_join_network_server_action = new Menu$menuaction_s_0;
       s_player_setup_action = new Menu$menuaction_s_0;
       Menu_Multiplayer = new Menu$4_0;
-      bindnames = initValues(_3_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Cloneable, Q$Object_$1, Q$Object_$2]), Q$String_$1, [initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['+attack', 'attack']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1,
-        Q$String_$1
-      ]), Q$String, ['weapnext', 'next weapon']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['+forward', 'walk forward']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['+back', 'backpedal']), initValues(_3Ljava_lang_String_2_classLit,
-        makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['+left', 'turn left']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['+right', 'turn right']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable,
-        Q$Comparable_$1, Q$Object_$1, Q$String_$1
-      ]), Q$String, ['+speed', 'run']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['+moveleft', 'step left']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['+moveright', 'step right']), initValues(_3Ljava_lang_String_2_classLit,
-        makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['+strafe', 'sidestep']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['+lookup', 'look up']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable,
-        Q$Comparable_$1, Q$Object_$1, Q$String_$1
-      ]), Q$String, ['+lookdown', 'look down']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['centerview', 'center view']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['+mlook', 'mouse look']), initValues(_3Ljava_lang_String_2_classLit,
-        makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['+klook', 'keyboard look']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['+moveup', 'up / jump']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable,
-        Q$Comparable_$1, Q$Object_$1, Q$String_$1
-      ]), Q$String, ['+movedown', 'down / crouch']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['inven', 'inventory']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['invuse', 'use item']), initValues(_3Ljava_lang_String_2_classLit,
-        makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['invdrop', 'drop item']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['invprev', 'prev item']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable,
-        Q$Comparable_$1, Q$Object_$1, Q$String_$1
-      ]), Q$String, ['invnext', 'next item']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['cmd help', 'help computer']), initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, [null, null])]);
+      bindnames = initValues(
+        _3_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Cloneable, Q$Object_$1, Q$Object_$2]), Q$String_$1, [
+          initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              '+attack', 'attack'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              'weapnext', 'next weapon'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              '+forward', 'walk forward'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              '+back', 'backpedal'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              '+left', 'turn left'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              '+right', 'turn right'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              '+speed', 'run'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              '+moveleft', 'step left'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              '+moveright', 'step right'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              '+strafe', 'sidestep'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              '+lookup', 'look up'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              '+lookdown', 'look down'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              'centerview', 'center view'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              '+mlook', 'mouse look'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              '+klook', 'keyboard look'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              '+moveup', 'up / jump'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              '+movedown', 'down / crouch'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              'inven', 'inventory'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              'invuse', 'use item'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              'invdrop', 'drop item'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              'invprev', 'prev item'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              'invnext', 'next item'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [
+              'cmd help', 'help computer'
+            ]), initValues(
+            _3Ljava_lang_String_2_classLit, makeCastMap([
+              Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+            ]), Q$String, [null, null])
+        ]);
       s_keys_menu = new Menu$menuframework_s_0;
       s_keys_attack_action = new Menu$menuaction_s_0;
       s_keys_change_weapon_action = new Menu$menuaction_s_0;
@@ -14008,6 +14134,7 @@
       s_options_freelook_box = new Menu$menulist_s_0;
       s_options_noalttab_box = new Menu$menulist_s_0;
       s_options_alwaysrun_box = new Menu$menulist_s_0;
+      s_options_controller_box = new Menu$menulist_s_0;
       s_options_invertmouse_box = new Menu$menulist_s_0;
       s_options_lookspring_box = new Menu$menulist_s_0;
       s_options_lookstrafe_box = new Menu$menulist_s_0;
@@ -14015,15 +14142,18 @@
       s_options_sfxvolume_slider = new Menu$menuslider_s_0;
       s_options_joystick_box = new Menu$menulist_s_0;
       s_options_console_action = new Menu$menuaction_s_0;
-      yesno_names = initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['no', 'yes']);
-      crosshair_names = initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['none', 'cross', 'dot', 'angle']);
+      yesno_names = initValues(
+        _3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['no', 'yes']);
+      crosshair_names = initValues(
+        _3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['none', 'cross', 'dot', 'angle']);
       Menu_Options = new Menu$8_0;
-      idcredits = initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['+QUAKE II BY ID SOFTWARE', '', '+PROGRAMMING', 'John Carmack', 'John Cash', 'Brian Hook', '', '+JAVA PORT BY BYTONIC', 'Carsten Weisse', 'Holger Zickner', 'Rene Stoeckel', '', '+GWT PORT BY GOOGLE', 'Ray Cromwell', 'Stefan Haustein', 'Joel Webber', 'Magnus Marks', '', '+FULL VERSION PORT', 'Magnus Marks', '',
-        '+ART', 'Adrian Carmack', 'Kevin Cloud', 'Paul Steed', '', '+LEVEL DESIGN', 'Tim Willits', 'American McGee', 'Christian Antkow', 'Paul Jaquays', 'Brandon James', '', '+BIZ', 'Todd Hollenshead', 'Barrett (Bear) Alexander', 'Donna Jackson', '', '', '+SPECIAL THANKS', 'Ben Donges for beta testing', '', '', '', '', '', '', '+ADDITIONAL SUPPORT', '', '+LINUX PORT AND CTF', 'Dave "Zoid" Kirsch', '', '+CINEMATIC SEQUENCES', 'Ending Cinematic by Blur Studio - ', 'Venice, CA', '',
-        'Environment models for Introduction', 'Cinematic by Karl Dolgener', '', 'Assistance with environment design', 'by Cliff Iwai', '', '+SOUND EFFECTS AND MUSIC', 'Sound Design by Soundelux Media Labs.', 'Music Composed and Produced by', 'Soundelux Media Labs.  Special thanks', 'to Bill Brown, Tom Ozanich, Brian', 'Celano, Jeff Eisner, and The Soundelux', 'Players.', '', '"Level Music" by Sonic Mayhem', 'www.sonicmayhem.com', '', '"Quake II Theme Song"', '(C) 1997 Rob Zombie. All Rights',
-        'Reserved.', '', 'Track 10 ("Climb") by Jer Sypult', '', 'Voice of computers by', 'Carly Staehlin-Taylor', '', '+THANKS TO ACTIVISION', '+IN PARTICULAR:', '', 'John Tam', 'Steve Rosenthal', 'Marty Stratton', 'Henk Hartong', '', 'Quake II(tm) (C)1997 Id Software, Inc.', 'All Rights Reserved.  Distributed by', 'Activision, Inc. under license.', 'Quake II(tm), the Id Software name,', 'the "Q II"(tm) logo and id(tm)', 'logo are trademarks of Id Software,', 'Inc. Activision(R) is a registered',
-        'trademark of Activision, Inc. All', 'other trademarks and trade names are', 'properties of their respective owners.', null
-      ]);
+      idcredits = initValues(
+        _3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, [
+          '+QUAKE II BY ID SOFTWARE', '', '+PROGRAMMING', 'John Carmack', 'John Cash', 'Brian Hook', '', '+JAVA PORT BY BYTONIC', 'Carsten Weisse', 'Holger Zickner', 'Rene Stoeckel', '', '+GWT PORT BY GOOGLE', 'Ray Cromwell', 'Stefan Haustein', 'Joel Webber', 'Magnus Marks', '', '+FULL VERSION PORT', 'Magnus Marks', '', '+ART', 'Adrian Carmack', 'Kevin Cloud', 'Paul Steed', '', '+LEVEL DESIGN', 'Tim Willits', 'American McGee', 'Christian Antkow', 'Paul Jaquays', 'Brandon James', '', '+BIZ',
+          'Todd Hollenshead', 'Barrett (Bear) Alexander', 'Donna Jackson', '', '', '+SPECIAL THANKS', 'Ben Donges for beta testing', '', '', '', '', '', '', '+ADDITIONAL SUPPORT', '', '+LINUX PORT AND CTF', 'Dave "Zoid" Kirsch', '', '+CINEMATIC SEQUENCES', 'Ending Cinematic by Blur Studio - ', 'Venice, CA', '', 'Environment models for Introduction', 'Cinematic by Karl Dolgener', '', 'Assistance with environment design', 'by Cliff Iwai', '', '+SOUND EFFECTS AND MUSIC',
+          'Sound Design by Soundelux Media Labs.', 'Music Composed and Produced by', 'Soundelux Media Labs.  Special thanks', 'to Bill Brown, Tom Ozanich, Brian', 'Celano, Jeff Eisner, and The Soundelux', 'Players.', '', '"Level Music" by Sonic Mayhem', 'www.sonicmayhem.com', '', '"Quake II Theme Song"', '(C) 1997 Rob Zombie. All Rights', 'Reserved.', '', 'Track 10 ("Climb") by Jer Sypult', '', 'Voice of computers by', 'Carly Staehlin-Taylor', '', '+THANKS TO ACTIVISION', '+IN PARTICULAR:', '',
+          'John Tam', 'Steve Rosenthal', 'Marty Stratton', 'Henk Hartong', '', 'Quake II(tm) (C)1997 Id Software, Inc.', 'All Rights Reserved.  Distributed by', 'Activision, Inc. under license.', 'Quake II(tm), the Id Software name,', 'the "Q II"(tm) logo and id(tm)', 'logo are trademarks of Id Software,', 'Inc. Activision(R) is a registered', 'trademark of Activision, Inc. All', 'other trademarks and trade names are', 'properties of their respective owners.', null
+        ]);
       credits = idcredits;
       Menu_Credits = new Menu$9_0;
       s_game_menu = new Menu$menuframework_s_0;
@@ -14039,14 +14169,17 @@
       Menu_Game = new Menu$10_0;
       s_savegame_menu = new Menu$menuframework_s_0;
       s_loadgame_menu = new Menu$menuframework_s_0;
-      s_loadgame_actions = initDim(_3Lcom_googlecode_playnquake_core_client_Menu$menuaction_1s_2_classLit, makeCastMap([Q$Serializable, Q$Cloneable, Q$Object_$1]), Q$Menu$menuaction_s, 3, 0);
+      s_loadgame_actions = initDim(
+        _3Lcom_googlecode_playnquake_core_client_Menu$menuaction_1s_2_classLit, makeCastMap([Q$Serializable, Q$Cloneable, Q$Object_$1]), Q$Menu$menuaction_s, 3, 0);
       for (n = 0; n < 3; n++)
         s_loadgame_actions[n] = new Menu$menuaction_s_0;
-      m_savestrings = initDim(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, 3, 0);
+      m_savestrings = initDim(
+        _3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, 3, 0);
       for (n1 = 0; n1 < 3; n1++)
         m_savestrings[n1] = '';
       m_savevalid = initDim(_3Z_classLit, makeCastMap([Q$Serializable, Q$Cloneable]), -1, 3, 2);
-      s_savegame_actions = initDim(_3Lcom_googlecode_playnquake_core_client_Menu$menuaction_1s_2_classLit, makeCastMap([Q$Serializable, Q$Cloneable, Q$Object_$1]), Q$Menu$menuaction_s, 3, 0);
+      s_savegame_actions = initDim(
+        _3Lcom_googlecode_playnquake_core_client_Menu$menuaction_1s_2_classLit, makeCastMap([Q$Serializable, Q$Cloneable, Q$Object_$1]), Q$Menu$menuaction_s, 3, 0);
       for (n0 = 0; n0 < 3; n0++)
         s_savegame_actions[n0] = new Menu$menuaction_s_0;
       s_player_config_menu = new Menu$menuframework_s_0;
@@ -14060,13 +14193,29 @@
       s_player_hand_title = new Menu$menuseparator_s_0;
       s_player_rate_title = new Menu$menuseparator_s_0;
       new Menu$menuaction_s_0;
-      s_pmi = initValues(_3Lcom_googlecode_playnquake_core_client_Menu$playermodelinfo_1s_2_classLit, makeCastMap([Q$Serializable, Q$Cloneable, Q$Object_$1]), Q$Menu$playermodelinfo_s, [new Menu$playermodelinfo_s_0('Female', 'female', initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['athena', 'brianna', 'cobalt', 'doomgal', 'ensign', 'jezebel', 'jungle', 'lotus', 'stiletto',
-        'venus', 'voodoo'
-      ])), new Menu$playermodelinfo_s_0('Male', 'male', initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['cipher', 'claymore', 'flak', 'grunt', 'howitzer', 'major', 'nightops', 'pointman', 'psycho', 'rampage', 'razor', 'recon', 'scout', 'sniper', 'viper']))]);
-      s_pmnames = initDim(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, 1024, 0);
+      s_pmi = initValues(
+        _3Lcom_googlecode_playnquake_core_client_Menu$playermodelinfo_1s_2_classLit, makeCastMap([Q$Serializable, Q$Cloneable, Q$Object_$1]), Q$Menu$playermodelinfo_s, [
+          new Menu$playermodelinfo_s_0(
+            'Female', 'female', initValues(
+              _3Ljava_lang_String_2_classLit, makeCastMap([
+                Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+              ]), Q$String, [
+                'athena', 'brianna', 'cobalt', 'doomgal', 'ensign', 'jezebel', 'jungle', 'lotus', 'stiletto', 'venus', 'voodoo'
+              ])), new Menu$playermodelinfo_s_0(
+            'Male', 'male', initValues(
+              _3Ljava_lang_String_2_classLit, makeCastMap([
+                Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1
+              ]), Q$String, [
+                'cipher', 'claymore', 'flak', 'grunt', 'howitzer', 'major', 'nightops', 'pointman', 'psycho', 'rampage', 'razor', 'recon', 'scout', 'sniper', 'viper'
+              ]))
+        ]);
+      s_pmnames = initDim(
+        _3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, 1024, 0);
       rate_tbl = initValues(_3I_classLit, makeCastMap([Q$int_$1, Q$Serializable, Q$Cloneable]), -1, [2500, 3200, 5000, 10000, 25000, 0]);
-      rate_names = initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['28.8 Modem', '33.6 Modem', 'Single ISDN', 'Dual ISDN/Cable', 'T1/LAN', 'User defined']);
-      handedness = initValues(_3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['right', 'left', 'center']);
+      rate_names = initValues(
+        _3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['28.8 Modem', '33.6 Modem', 'Single ISDN', 'Dual ISDN/Cable', 'T1/LAN', 'User defined']);
+      handedness = initValues(
+        _3Ljava_lang_String_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$CharSequence_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1, Q$String_$1]), Q$String, ['right', 'left', 'center']);
       entity_0 = new EntityType_0;
       Menu_PlayerConfig = new Menu$13_0;
       Menu_Quit = new Menu$14_0;
@@ -14777,7 +14926,7 @@
       Menu_AddItem(s_keys_menu, s_keys_inv_prev_action);
       Menu_AddItem(s_keys_menu, s_keys_inv_next_action);
       Menu_AddItem(s_keys_menu, s_keys_help_computer_action);
-      Menu_SetStatusBar(s_keys_menu, 'enter to change, backspace to clear');
+      Menu_SetStatusBar(s_keys_menu, 'Enter to change, backspace to clear');
       Menu_Center(s_keys_menu);
     }
 
@@ -15137,6 +15286,12 @@
       s_options_alwaysrun_box.name_0 = 'always run';
       s_options_alwaysrun_box.callback = new Menu$49_0;
       s_options_alwaysrun_box.itemnames = yesno_names;
+      s_options_controller_box.type_0 = 3;
+      s_options_controller_box.x_0 = 0;
+      s_options_controller_box.y_0 = 60;
+      s_options_controller_box.name_0 = 'enable controller';
+      s_options_controller_box.callback = new Menu$500_0;
+      s_options_controller_box.itemnames = yesno_names;
       s_options_invertmouse_box.type_0 = 3;
       s_options_invertmouse_box.x_0 = 0;
       s_options_invertmouse_box.y_0 = 70;
@@ -15192,6 +15347,8 @@
       Menu_AddItem(s_options_menu, s_options_sfxvolume_slider);
       Menu_AddItem(s_options_menu, s_options_sensitivity_slider);
       Menu_AddItem(s_options_menu, s_options_alwaysrun_box);
+      Menu_AddItem(s_options_menu, s_options_joystick_box);
+      // Menu_AddItem(s_options_menu, s_options_controller_box);
       Menu_AddItem(s_options_menu, s_options_invertmouse_box);
       Menu_AddItem(s_options_menu, s_options_lookspring_box);
       Menu_AddItem(s_options_menu, s_options_lookstrafe_box);
@@ -15524,17 +15681,98 @@
       return compareTo_5(a.directory, b.directory);
     }
 
-    var MAIN_MENU_NAMES, MAIN_MENU_NAMES_NOMULTI, Menu_Credits, Menu_Game, Menu_Keys, Menu_Main, Menu_Multiplayer, Menu_Options, Menu_PlayerConfig, Menu_Quit, bind_grab = false,
-      bindnames, cached = false,
-      credits, credits_start_time = 0,
-      crosshair_names, entity_0, entityModelLoading = false,
-      handedness, idcredits, m_drawfunc, m_entersound = false,
-      m_keyfunc, m_layers, m_main_cursor = 0,
+    var MAIN_MENU_NAMES,
+      MAIN_MENU_NAMES_NOMULTI,
+      Menu_Credits,
+      Menu_Game,
+      Menu_Keys,
+      Menu_Main,
+      Menu_Multiplayer,
+      Menu_Options,
+      Menu_PlayerConfig,
+      Menu_Quit,
+      bind_grab = false,
+      bindnames,
+      cached = false,
+      credits,
+      credits_start_time = 0,
+      crosshair_names, entity_0,
+      entityModelLoading = false,
+      handedness,
+      idcredits,
+      m_drawfunc,
+      m_entersound = false,
+      m_keyfunc,
+      m_layers,
+      m_main_cursor = 0,
       m_menudepth = 0,
-      m_savestrings, m_savevalid, rate_names, rate_tbl, s_benchmark_action, s_blankline, s_credits_action, s_demo_action, s_easy_game_action, s_game_menu, s_hard_game_action, s_join_network_server_action, s_keys_attack_action, s_keys_backpedal_action, s_keys_center_view_action, s_keys_change_weapon_action, s_keys_help_computer_action, s_keys_inv_drop_action, s_keys_inv_next_action, s_keys_inv_prev_action, s_keys_inv_use_action, s_keys_inventory_action, s_keys_keyboard_look_action, s_keys_look_down_action,
-      s_keys_look_up_action, s_keys_menu, s_keys_mouse_look_action, s_keys_move_down_action, s_keys_move_up_action, s_keys_run_action, s_keys_sidestep_action, s_keys_step_left_action, s_keys_step_right_action, s_keys_turn_left_action, s_keys_turn_right_action, s_keys_walk_forward_action, s_load_game_action, s_loadgame_actions, s_loadgame_menu, s_medium_game_action, s_multiplayer_menu, s_options_alwaysrun_box, s_options_console_action, s_options_crosshair_box, s_options_customize_options_action,
-      s_options_defaults_action, s_options_freelook_box, s_options_invertmouse_box, s_options_joystick_box, s_options_lookspring_box, s_options_lookstrafe_box, s_options_menu, s_options_noalttab_box, s_options_sensitivity_slider, s_options_sfxvolume_slider, s_player_config_menu, s_player_hand_title, s_player_handedness_box, s_player_model_box, s_player_model_title, s_player_name_field, s_player_rate_box, s_player_rate_title, s_player_setup_action, s_player_skin_box, s_player_skin_title, s_pmi, s_pmnames,
-      s_save_game_action, s_savegame_actions, s_savegame_menu, win_noalttab, yaw_0 = 0,
+      m_savestrings,
+      m_savevalid,
+      rate_names, rate_tbl,
+      s_benchmark_action,
+      s_blankline,
+      s_credits_action,
+      s_demo_action,
+      s_easy_game_action,
+      s_game_menu,
+      s_hard_game_action,
+      s_join_network_server_action,
+      s_keys_attack_action,
+      s_keys_backpedal_action,
+      s_keys_center_view_action,
+      s_keys_change_weapon_action,
+      s_keys_help_computer_action,
+      s_keys_inv_drop_action,
+      s_keys_inv_next_action,
+      s_keys_inv_prev_action,
+      s_keys_inv_use_action,
+      s_keys_inventory_action,
+      s_keys_keyboard_look_action,
+      s_keys_look_down_action,
+      s_keys_look_up_action, s_keys_menu,
+      s_keys_mouse_look_action,
+      s_keys_move_down_action,
+      s_keys_move_up_action,
+      s_keys_run_action,
+      s_keys_sidestep_action,
+      s_keys_step_left_action,
+      s_keys_step_right_action,
+      s_keys_turn_left_action,
+      s_keys_turn_right_action,
+      s_keys_walk_forward_action,
+      s_load_game_action,
+      s_loadgame_actions, s_loadgame_menu,
+      s_medium_game_action,
+      s_multiplayer_menu,
+      s_options_alwaysrun_box,
+      s_options_controller_box,
+      s_options_console_action,
+      s_options_crosshair_box,
+      s_options_customize_options_action,
+      s_options_defaults_action,
+      s_options_freelook_box,
+      s_options_invertmouse_box,
+      s_options_joystick_box,
+      s_options_lookspring_box,
+      s_options_lookstrafe_box,
+      s_options_menu,
+      s_options_noalttab_box,
+      s_options_sensitivity_slider,
+      s_options_sfxvolume_slider,
+      s_player_config_menu,
+      s_player_hand_title,
+      s_player_handedness_box,
+      s_player_model_box,
+      s_player_model_title,
+      s_player_name_field,
+      s_player_rate_box,
+      s_player_rate_title,
+      s_player_setup_action,
+      s_player_skin_box,
+      s_player_skin_title, s_pmi,
+      s_pmnames, s_save_game_action,
+      s_savegame_actions, s_savegame_menu,
+      win_noalttab, yaw_0 = 0,
       yesno_names;
 
     function Menu$10_0() {}
@@ -15862,6 +16100,14 @@
     _.execute_3 = function execute_111(o) {
       $clinit_Menu();
       SetValue('m_pitch', -($clinit_Globals(), m_pitch).value_0);
+    };
+
+    function Menu$500_0() {}
+
+    defineSeed(400, 365, {}, Menu$500_0);
+    _.execute_3 = function execute_500(o) {
+      $clinit_Menu();
+      Set2('cl_run', '' + s_options_alwaysrun_box.curvalue, false);
     };
 
     function Menu$51_0() {}
@@ -63383,6 +63629,171 @@
 
     defineSeed(1594, 1, {}, GroupLayerImpl_0);
 
+    function XboxController(index) {
+      if (index) {
+        this.index = index;
+      } else {
+        this.index = 0;
+      }
+
+      this.buttons = [
+        "a",
+        "b",
+        "x",
+        "y",
+        "lb",
+        "rb",
+        "lt",
+        "rt",
+        "select",
+        "start",
+        "l_stick",
+        "r_stick",
+        "d_up",
+        "d_down",
+        "d_left",
+        "d_right"
+      ];
+
+      this.sticks = [
+        "l_stick",
+        "r_stick"
+      ];
+    }
+
+    XboxController.prototype.__getGamepad = function () {
+      var connectedControllers = getAllConnectedControllers();
+      if (connectedControllers.length > this.index) {
+        return connectedControllers[this.index];
+      }
+      return null;
+    };
+
+    XboxController.prototype.onControllerConnected = function (callback) {
+      window.addEventListener("gamepadconnected", function (event) {
+        if (this.index === event.gamepad.index) {
+          if (callback) {
+            callback();
+          }
+        }
+      });
+    };
+
+    XboxController.prototype.onControllerDisconnected = function (callback) {
+      window.addEventListener("gamepaddisconnected", function (event) {
+        if (this.index === event.gamepad.index) {
+          if (callback) {
+            callback();
+          }
+        }
+      });
+    };
+
+    XboxController.prototype.isControllerConnected = function () {
+      var controller = this.__getGamepad();
+      if (controller) {
+        return controller.connected;
+      }
+      return false;
+    };
+
+    XboxController.prototype.getControllerInput = function () {
+      var controller = this.__getGamepad();
+      var result = {};
+      if (controller) {
+        if (controller.buttons) {
+          result.buttons = {};
+          for (var i = 0; i < this.buttons.length; ++i) {
+            result.buttons[this.buttons[i]] = controller.buttons[i].pressed;
+          }
+        }
+        if (controller.axes) {
+          result.sticks = {};
+          for (var i = 0; i < this.sticks.length; ++i) {
+            var j = i * 2;
+            result.sticks[this.sticks[i]] = {};
+            result.sticks[this.sticks[i]].x = controller.axes[j];
+            result.sticks[this.sticks[i]].y = controller.axes[j + 1];
+          }
+        }
+      }
+      return result;
+    };
+
+    //----------utility functions-----------------
+    var getAllConnectedControllers = function () {
+      if (navigator.getGamepads) {
+        return navigator.getGamepads();
+      }
+      if (navigator.webkitGetGamepads) {
+        return navigator.webkitGetGamepads();
+      }
+      return null;
+    };
+
+    // Returns an array of {index, controllerId} objects.
+    var getAllConnectedcontrollerIdAndIndex = function () {
+      var controllers = getAllConnectedControllers();
+      if (controllers) {
+        var result = [];
+        for (var i = 0; i < controllers.length; ++i) {
+          if (controllers[i]) {
+            result.push({
+              index: i,
+              controllerId: controllers[i].id
+            });
+          }
+        }
+        return result;
+      }
+      return null;
+    };
+
+    var checkBrowserCompatibility = function () {
+      return !!getAllConnectedControllers();
+    };
+
+    //----------Node style export---------------
+    if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+      module.exports = Validator;
+    }
+
+    window.onload = function () {
+      var xboxController = new XboxController();
+
+      xboxController.onControllerConnected(function () {
+        console.log("connected");
+      });
+
+      xboxController.onControllerDisconnected(function () {
+        console.log("disconnected");
+      });
+
+      window.setInterval(
+        function () {
+          var inputs = xboxController.getControllerInput();
+          var buttons = inputs.buttons;
+          for (var btn in buttons) {
+            if (buttons[btn]) {
+              console.log([btn] + " pressed");
+            } else {
+              // console.log([btn] + "not pressed");
+            }
+          }
+          // var sticks = inputs.sticks;
+          // for (var btn in sticks) {
+          //   if (sticks[btn]) {
+          //     console.log("L stick X = " + sticks.l_stick.x);
+          //     console.log("L stick Y = " + sticks.l_stick.y);
+          //     console.log("R stick X = " + sticks.r_stick.x);
+          //     console.log("R stick Y = " + sticks.r_stick.y);
+          //   } else {
+
+          //   }
+          // }
+        }, 200);
+    }
+
     function $clinit_Key_0() {
       $clinit_Key_0 = nullMethod;
       A = new Key_0('A', 0);
@@ -63611,11 +64022,292 @@
       ZOOM_IN = new Key_0('ZOOM_IN', 223);
       ZOOM_OUT = new Key_0('ZOOM_OUT', 224);
       UNKNOWN = new Key_0('UNKNOWN', 225);
-      $VALUES_7 = initValues(_3Lplayn_core_Key_2_classLit, makeCastMap([Q$Serializable, Q$Serializable_$1, Q$Cloneable, Q$Comparable_$1, Q$Object_$1]), Q$Key, [A, B, C, D, E_0, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, K0, K1, K2, K3, K4, K5, K6, K7, K8, K9, NP0, NP1, NP2, NP3, NP4, NP5, NP6, NP7, NP8, NP9, NP_ADD, NP_DECIMAL, NP_DELETE, NP_DIVIDE, NP_MULTIPLY, NP_NUM_LOCK, NP_SUBTRACT, NP_DOWN, NP_LEFT, NP_RIGHT, NP_UP, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, AMPERSAND,
-        ASTERISK, AT, BACKQUOTE, BACKSLASH, BANG, CIRCUMFLEX, COLON, COMMA, DOLLAR, DOUBLE_QUOTE, EQUALS, GREATER, HASH, LEFT_BRACE, LEFT_BRACKET, LEFT_PAREN, LESS, MINUS, MULTIPLY, PERCENT, PERIOD, PLUS, QUOTE, RIGHT_BRACE, RIGHT_BRACKET, RIGHT_PAREN, SEMICOLON, SLASH, SPACE, TILDE, QUESTION_MARK, UNDERSCORE, VERTICAL_BAR, ALT, CONTROL, CAPS_LOCK, SHIFT, META, DOWN, END, HOME, LEFT, PAGE_UP, PAGE_DOWN, RIGHT, UP, BACKSPACE, DELETE, ENTER, INSERT, TAB, ESCAPE, PAUSE, PRINT_SCREEN, SCROLL_LOCK, WINDOWS,
-        MEDIA_CLOSE, MEDIA_EJECT, MEDIA_FAST_FORWARD, MEDIA_NEXT, MEDIA_PAUSE, MEDIA_PLAY, MEDIA_PLAY_PAUSE, MEDIA_PREVIOUS, MEDIA_RECORD, MEDIA_REWIND, MEDIA_STOP, BLUE, GREEN, RED, YELLOW, APP_SWITCH, AVR_INPUT, AVR_POWER, BACK, BOOKMARK, BREAK, BUTTON_1, BUTTON_2, BUTTON_3, BUTTON_4, BUTTON_5, BUTTON_6, BUTTON_7, BUTTON_8, BUTTON_9, BUTTON_10, BUTTON_11, BUTTON_12, BUTTON_13, BUTTON_14, BUTTON_15, BUTTON_16, BUTTON_A, BUTTON_B, BUTTON_C, BUTTON_L1, BUTTON_L2, BUTTON_MODE, BUTTON_R1, BUTTON_R2,
-        BUTTON_SELECT, BUTTON_START, BUTTON_THUMBL, BUTTON_THUMBR, BUTTON_X, BUTTON_Y, BUTTON_Z, CALL, CAMERA, CAPTIONS, CHANNEL_DOWN, CHANNEL_UP, CLEAR, DPAD_CENTER, DPAD_DOWN, DPAD_LEFT, DPAD_RIGHT, DPAD_UP, DVR, ENDCALL, ENVELOPE, EXPLORER, FOCUS, FORWARD, FORWARD_DEL, FUNCTION, GUIDE, HEADSETHOOK, INFO, MENU, MUTE, NOTIFICATION, NUM, PICTSYMBOLS, POWER, SEARCH, SETTINGS, SOFT_LEFT, SOFT_RIGHT, STAR, STB_INPUT, STB_POWER, SWITCH_CHARSET, SYM, SYSRQ, TV, TV_INPUT, TV_POWER, VOLUME_DOWN, VOLUME_MUTE,
-        VOLUME_UP, WINDOW, ZOOM_IN, ZOOM_OUT, UNKNOWN
+      CONTROLLER_A = new Key_0('CONTROLLER_A', 226);
+      CONTROLLER_B = new Key_0('CONTROLLER_B', 227);
+      CONTROLLER_X = new Key_0('CONTROLLER_X', 228);
+      CONTROLLER_Y = new Key_0('CONTROLLER_Y', 229);
+      CONTROLLER_D_UP = new Key_0('CONTROLLER_D_UP', 230);
+      CONTROLLER_D_DOWN = new Key_0('CONTROLLER_D_DOWN', 231);
+      CONTROLLER_D_LEFT = new Key_0('CONTROLLER_D_LEFT', 232);
+      CONTROLLER_D_RIGHT = new Key_0('CONTROLLER_D_RIGHT', 233);
+      CONTROLLER_R_STICK_UP = new Key_0('CONTROLLER_R_STICK_UP', 234);
+      CONTROLLER_R_STICK_DOWN = new Key_0('CONTROLLER_R_STICK_DOWN', 235);
+      CONTROLLER_R_STICK_LEFT = new Key_0('CONTROLLER_R_STICK_LEFT', 236);
+      CONTROLLER_R_STICK_RIGHT = new Key_0('CONTROLLER_R_STICK_RIGHT', 237);
+      CONTROLLER_R_STICK_P_DOWN = new Key_0('CONTROLLER_R_STICK_P_DOWN', 238);
+      CONTROLLER_RB = new Key_0('CONTROLLER_RB', 239);
+      CONTROLLER_RT = new Key_0('CONTROLLER_RT', 240);
+      CONTROLLER_L_STICK_UP = new Key_0('CONTROLLER_L_STICK_UP', 241);
+      CONTROLLER_L_STICK_DOWN = new Key_0('CONTROLLER_L_STICK_DOWN', 242);
+      CONTROLLER_L_STICK_LEFT = new Key_0('CONTROLLER_L_STICK_LEFT', 243);
+      CONTROLLER_L_STICK_RIGHT = new Key_0('CONTROLLER_L_STICK_RIGHT', 244);
+      CONTROLLER_L_STICK_P_DOWN = new Key_0('CONTROLLER_L_STICK_P_DOWN', 245);
+      CONTROLLER_LB = new Key_0('CONTROLLER_LB', 246);
+      CONTROLLER_LT = new Key_0('CONTROLLER_LT', 247);
+      CONTROLLER_START = new Key_0('CONTROLLER_START', 248);
+      CONTROLLER_SELECT = new Key_0('CONTROLLER_SELECT', 249);
+
+      $VALUES_7 = initValues(
+    _3Lplayn_core_Key_2_classLit,
+    makeCastMap(
+      [
+        Q$Serializable,
+        Q$Serializable_$1,
+        Q$Cloneable,
+        Q$Comparable_$1,
+        Q$Object_$1
+      ]), Q$Key, 
+      [
+        A,
+        B,
+        C,
+        D,
+        E_0,
+        F,
+        G,
+        H,
+        I,
+        J,
+        K,
+        L,
+        M,
+        N,
+        O,
+        P,
+        Q,
+        R,
+        S,
+        T,
+        U,
+        V,
+        W,
+        X,
+        Y,
+        Z,
+        K0,
+        K1,
+        K2,
+        K3,
+        K4,
+        K5,
+        K6,
+        K7,
+        K8,
+        K9,
+        NP0,
+        NP1,
+        NP2,
+        NP3,
+        NP4,
+        NP5,
+        NP6,
+        NP7,
+        NP8,
+        NP9,
+        NP_ADD,
+        NP_DECIMAL,
+        NP_DELETE,
+        NP_DIVIDE,
+        NP_MULTIPLY,
+        NP_NUM_LOCK,
+        NP_SUBTRACT,
+        NP_DOWN,
+        NP_LEFT,
+        NP_RIGHT,
+        NP_UP,
+        F1,
+        F2,
+        F3,
+        F4,
+        F5,
+        F6,
+        F7,
+        F8,
+        F9,
+        F10,
+        F11,
+        F12,
+        AMPERSAND,
+        ASTERISK,
+        AT,
+        BACKQUOTE,
+        BACKSLASH,
+        BANG,
+        CIRCUMFLEX,
+        COLON,
+        COMMA,
+        DOLLAR,
+        DOUBLE_QUOTE,
+        EQUALS,
+        GREATER,
+        HASH,
+        LEFT_BRACE,
+        LEFT_BRACKET,
+        LEFT_PAREN,
+        LESS,
+        MINUS,
+        MULTIPLY,
+        PERCENT,
+        PERIOD,
+        PLUS,
+        QUOTE,
+        RIGHT_BRACE,
+        RIGHT_BRACKET,
+        RIGHT_PAREN,
+        SEMICOLON,
+        SLASH,
+        SPACE,
+        TILDE,
+        QUESTION_MARK,
+        UNDERSCORE,
+        VERTICAL_BAR,
+        ALT,
+        CONTROL,
+        CAPS_LOCK,
+        SHIFT,
+        META,
+        DOWN,
+        END,
+        HOME,
+        LEFT,
+        PAGE_UP,
+        PAGE_DOWN,
+        RIGHT,
+        UP,
+        BACKSPACE,
+        DELETE,
+        ENTER,
+        INSERT,
+        TAB,
+        ESCAPE,
+        PAUSE,
+        PRINT_SCREEN,
+        SCROLL_LOCK,
+        WINDOWS,
+        MEDIA_CLOSE,
+        MEDIA_EJECT,
+        MEDIA_FAST_FORWARD,
+        MEDIA_NEXT,
+        MEDIA_PAUSE,
+        MEDIA_PLAY,
+        MEDIA_PLAY_PAUSE,
+        MEDIA_PREVIOUS,
+        MEDIA_RECORD,
+        MEDIA_REWIND,
+        MEDIA_STOP,
+        BLUE,
+        GREEN,
+        RED,
+        YELLOW,
+        APP_SWITCH,
+        AVR_INPUT,
+        AVR_POWER,
+        BACK,
+        BOOKMARK,
+        BREAK,
+        BUTTON_1,
+        BUTTON_2,
+        BUTTON_3,
+        BUTTON_4,
+        BUTTON_5,
+        BUTTON_6,
+        BUTTON_7,
+        BUTTON_8,
+        BUTTON_9,
+        BUTTON_10,
+        BUTTON_11,
+        BUTTON_12,
+        BUTTON_13,
+        BUTTON_14,
+        BUTTON_15,
+        BUTTON_16,
+        BUTTON_A,
+        BUTTON_B,
+        BUTTON_C,
+        BUTTON_L1,
+        BUTTON_L2,
+        BUTTON_MODE,
+        BUTTON_R1,
+        BUTTON_R2,
+        BUTTON_SELECT,
+        BUTTON_START,
+        BUTTON_THUMBL,
+        BUTTON_THUMBR,
+        BUTTON_X,
+        BUTTON_Y,
+        BUTTON_Z,
+        CALL,
+        CAMERA,
+        CAPTIONS,
+        CHANNEL_DOWN,
+        CHANNEL_UP,
+        CLEAR,
+        DPAD_CENTER,
+        DPAD_DOWN,
+        DPAD_LEFT,
+        DPAD_RIGHT,
+        DPAD_UP,
+        DVR,
+        ENDCALL,
+        ENVELOPE,
+        EXPLORER,
+        FOCUS,
+        FORWARD,
+        FORWARD_DEL,
+        FUNCTION,
+        GUIDE,
+        HEADSETHOOK,
+        INFO,
+        MENU,
+        MUTE,
+        NOTIFICATION,
+        NUM,
+        PICTSYMBOLS,
+        POWER,
+        SEARCH,
+        SETTINGS,
+        SOFT_LEFT,
+        SOFT_RIGHT,
+        STAR,
+        STB_INPUT,
+        STB_POWER,
+        SWITCH_CHARSET,
+        SYM,
+        SYSRQ,
+        TV,
+        TV_INPUT,
+        TV_POWER,
+        VOLUME_DOWN,
+        VOLUME_MUTE,
+        VOLUME_UP,
+        WINDOW,
+        ZOOM_IN,
+        ZOOM_OUT,
+        UNKNOWN,
+        CONTROLLER_A,
+        CONTROLLER_B,
+        CONTROLLER_X,
+        CONTROLLER_Y,
+        CONTROLLER_D_UP,
+        CONTROLLER_D_DOWN,
+        CONTROLLER_D_LEFT,
+        CONTROLLER_D_RIGHT,
+        CONTROLLER_R_STICK_UP,
+        CONTROLLER_R_STICK_DOWN,
+        CONTROLLER_R_STICK_LEFT,
+        CONTROLLER_R_STICK_RIGHT,
+        CONTROLLER_R_STICK_P_DOWN,
+        CONTROLLER_RB,
+        CONTROLLER_RT,
+        CONTROLLER_L_STICK_UP,
+        CONTROLLER_L_STICK_DOWN,
+        CONTROLLER_L_STICK_LEFT,
+        CONTROLLER_L_STICK_RIGHT,
+        CONTROLLER_L_STICK_P_DOWN,
+        CONTROLLER_LB,
+        CONTROLLER_LT,
+        CONTROLLER_START,
+        CONTROLLER_SELECT
       ]);
     }
 
@@ -63628,15 +64320,268 @@
       return $VALUES_7;
     }
 
-    defineSeed(1595, 11, makeCastMap([Q$Serializable, Q$Comparable, Q$Enum, Q$Key]), Key_0);
+    defineSeed(1595, 11, makeCastMap(
+      [
+        Q$Serializable,
+        Q$Comparable,
+        Q$Enum,
+        Q$Key
+      ]), Key_0);
     // -->
   </script>
   <script>
     // <!--
-    var $VALUES_7, A, ALT, AMPERSAND, APP_SWITCH, ASTERISK, AT, AVR_INPUT, AVR_POWER, B, BACK, BACKQUOTE, BACKSLASH, BACKSPACE, BANG, BLUE, BOOKMARK, BREAK, BUTTON_1, BUTTON_10, BUTTON_11, BUTTON_12, BUTTON_13, BUTTON_14, BUTTON_15, BUTTON_16, BUTTON_2, BUTTON_3, BUTTON_4, BUTTON_5, BUTTON_6, BUTTON_7, BUTTON_8, BUTTON_9, BUTTON_A, BUTTON_B, BUTTON_C, BUTTON_L1, BUTTON_L2, BUTTON_MODE, BUTTON_R1, BUTTON_R2, BUTTON_SELECT, BUTTON_START, BUTTON_THUMBL, BUTTON_THUMBR, BUTTON_X, BUTTON_Y, BUTTON_Z, C, CALL,
-      CAMERA, CAPS_LOCK, CAPTIONS, CHANNEL_DOWN, CHANNEL_UP, CIRCUMFLEX, CLEAR, COLON, COMMA, CONTROL, D, DELETE, DOLLAR, DOUBLE_QUOTE, DOWN, DPAD_CENTER, DPAD_DOWN, DPAD_LEFT, DPAD_RIGHT, DPAD_UP, DVR, E_0, END, ENDCALL, ENTER, ENVELOPE, EQUALS, ESCAPE, EXPLORER, F, F1, F10, F11, F12, F2, F3, F4, F5, F6, F7, F8, F9, FOCUS, FORWARD, FORWARD_DEL, FUNCTION, G, GREATER, GREEN, GUIDE, H, HASH, HEADSETHOOK, HOME, I, INFO, INSERT, J, K, K0, K1, K2, K3, K4, K5, K6, K7, K8, K9, L, LEFT, LEFT_BRACE, LEFT_BRACKET,
-      LEFT_PAREN, LESS, M, MEDIA_CLOSE, MEDIA_EJECT, MEDIA_FAST_FORWARD, MEDIA_NEXT, MEDIA_PAUSE, MEDIA_PLAY, MEDIA_PLAY_PAUSE, MEDIA_PREVIOUS, MEDIA_RECORD, MEDIA_REWIND, MEDIA_STOP, MENU, META, MINUS, MULTIPLY, MUTE, N, NOTIFICATION, NP0, NP1, NP2, NP3, NP4, NP5, NP6, NP7, NP8, NP9, NP_ADD, NP_DECIMAL, NP_DELETE, NP_DIVIDE, NP_DOWN, NP_LEFT, NP_MULTIPLY, NP_NUM_LOCK, NP_RIGHT, NP_SUBTRACT, NP_UP, NUM, O, P, PAGE_DOWN, PAGE_UP, PAUSE, PERCENT, PERIOD, PICTSYMBOLS, PLUS, POWER, PRINT_SCREEN, Q,
-      QUESTION_MARK, QUOTE, R, RED, RIGHT, RIGHT_BRACE, RIGHT_BRACKET, RIGHT_PAREN, S, SCROLL_LOCK, SEARCH, SEMICOLON, SETTINGS, SHIFT, SLASH, SOFT_LEFT, SOFT_RIGHT, SPACE, STAR, STB_INPUT, STB_POWER, SWITCH_CHARSET, SYM, SYSRQ, T, TAB, TILDE, TV, TV_INPUT, TV_POWER, U, UNDERSCORE, UNKNOWN, UP, V, VERTICAL_BAR, VOLUME_DOWN, VOLUME_MUTE, VOLUME_UP, W, WINDOW, WINDOWS, X, Y, YELLOW, Z, ZOOM_IN, ZOOM_OUT;
+    var $VALUES_7,
+        A,
+        ALT,
+        AMPERSAND,
+        APP_SWITCH,
+        ASTERISK,
+        AT,
+        AVR_INPUT,
+        AVR_POWER,
+        B,
+        BACK,
+        BACKQUOTE,
+        BACKSLASH,
+        BACKSPACE,
+        BANG,
+        BLUE,
+        BOOKMARK,
+        BREAK,
+        BUTTON_1,
+        BUTTON_10,
+        BUTTON_11,
+        BUTTON_12,
+        BUTTON_13,
+        BUTTON_14,
+        BUTTON_15,
+        BUTTON_16,
+        BUTTON_2,
+        BUTTON_3,
+        BUTTON_4,
+        BUTTON_5,
+        BUTTON_6,
+        BUTTON_7,
+        BUTTON_8,
+        BUTTON_9,
+        BUTTON_A,
+        BUTTON_B,
+        BUTTON_C,
+        BUTTON_L1,
+        BUTTON_L2,
+        BUTTON_MODE,
+        BUTTON_R1,
+        BUTTON_R2,
+        BUTTON_SELECT,
+        BUTTON_START,
+        BUTTON_THUMBL,
+        BUTTON_THUMBR,
+        BUTTON_X,
+        BUTTON_Y,
+        BUTTON_Z,
+        C,
+        CALL,
+        CAMERA,
+        CAPS_LOCK,
+        CAPTIONS,
+        CHANNEL_DOWN,
+        CHANNEL_UP,
+        CIRCUMFLEX,
+        CLEAR,
+        COLON,
+        COMMA,
+        CONTROL,
+        CONTROLLER_A,
+        CONTROLLER_B,
+        CONTROLLER_D_DOWN,
+        CONTROLLER_D_LEFT,
+        CONTROLLER_D_RIGHT,
+        CONTROLLER_D_UP,
+        CONTROLLER_L_STICK_DOWN,
+        CONTROLLER_L_STICK_LEFT,
+        CONTROLLER_L_STICK_P_DOWN,
+        CONTROLLER_L_STICK_RIGHT,
+        CONTROLLER_L_STICK_UP,
+        CONTROLLER_LB,
+        CONTROLLER_LT,
+        CONTROLLER_R_STICK_DOWN,
+        CONTROLLER_R_STICK_LEFT,
+        CONTROLLER_R_STICK_P_DOWN,
+        CONTROLLER_R_STICK_RIGHT,
+        CONTROLLER_R_STICK_UP,
+        CONTROLLER_RB,
+        CONTROLLER_RT,
+        CONTROLLER_SELECT,
+        CONTROLLER_START,
+        CONTROLLER_X,
+        CONTROLLER_Y,
+        D,
+        DELETE,
+        DOLLAR,
+        DOUBLE_QUOTE,
+        DOWN,
+        DPAD_CENTER,
+        DPAD_DOWN,
+        DPAD_LEFT,
+        DPAD_RIGHT,
+        DPAD_UP,
+        DVR,
+        E_0,
+        END,
+        ENDCALL,
+        ENTER,
+        ENVELOPE,
+        EQUALS,
+        ESCAPE,
+        EXPLORER,
+        F,
+        F1,
+        F10,
+        F11,
+        F12,
+        F2,
+        F3,
+        F4,
+        F5,
+        F6,
+        F7,
+        F8,
+        F9,
+        FOCUS,
+        FORWARD,
+        FORWARD_DEL,
+        FUNCTION,
+        G,
+        GREATER,
+        GREEN,
+        GUIDE,
+        H,
+        HASH,
+        HEADSETHOOK,
+        HOME,
+        I,
+        INFO,
+        INSERT,
+        J,
+        K,
+        K0,
+        K1,
+        K2,
+        K3,
+        K4,
+        K5,
+        K6,
+        K7,
+        K8,
+        K9,
+        L,
+        LEFT,
+        LEFT_BRACE,
+        LEFT_BRACKET,
+        LEFT_PAREN,
+        LESS,
+        M,
+        MEDIA_CLOSE,
+        MEDIA_EJECT,
+        MEDIA_FAST_FORWARD,
+        MEDIA_NEXT,
+        MEDIA_PAUSE,
+        MEDIA_PLAY,
+        MEDIA_PLAY_PAUSE,
+        MEDIA_PREVIOUS,
+        MEDIA_RECORD,
+        MEDIA_REWIND,
+        MEDIA_STOP,
+        MENU,
+        META,
+        MINUS,
+        MULTIPLY,
+        MUTE,
+        N,
+        NOTIFICATION,
+        NP0,
+        NP1,
+        NP2,
+        NP3,
+        NP4,
+        NP5,
+        NP6,
+        NP7,
+        NP8,
+        NP9,
+        NP_ADD,
+        NP_DECIMAL,
+        NP_DELETE,
+        NP_DIVIDE,
+        NP_DOWN,
+        NP_LEFT,
+        NP_MULTIPLY,
+        NP_NUM_LOCK,
+        NP_RIGHT,
+        NP_SUBTRACT,
+        NP_UP,
+        NUM,
+        O,
+        P,
+        PAGE_DOWN,
+        PAGE_UP,
+        PAUSE,
+        PERCENT,
+        PERIOD,
+        PICTSYMBOLS,
+        PLUS,
+        POWER,
+        PRINT_SCREEN,
+        Q,
+        QUESTION_MARK,
+        QUOTE,
+        R,
+        RED,
+        RIGHT,
+        RIGHT_BRACE,
+        RIGHT_BRACKET,
+        RIGHT_PAREN,
+        S,
+        SCROLL_LOCK,
+        SEARCH,
+        SEMICOLON,
+        SETTINGS,
+        SHIFT,
+        SLASH,
+        SOFT_LEFT,
+        SOFT_RIGHT,
+        SPACE,
+        STAR,
+        STB_INPUT,
+        STB_POWER,
+        SWITCH_CHARSET,
+        SYM,
+        SYSRQ,
+        T,
+        TAB,
+        TILDE,
+        TV,
+        TV_INPUT,
+        TV_POWER,
+        U,
+        UNDERSCORE,
+        UNKNOWN,
+        UP,
+        V,
+        VERTICAL_BAR,
+        VOLUME_DOWN,
+        VOLUME_MUTE,
+        VOLUME_UP,
+        W,
+        WINDOW,
+        WINDOWS,
+        X,
+        Y,
+        YELLOW,
+        Z,
+        ZOOM_IN,
+        ZOOM_OUT;
 
     function Keyboard$Event$Impl_0(flags, time, key) {
       Events$Input$Impl_0.call(this, flags, time);
