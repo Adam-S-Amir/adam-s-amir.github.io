@@ -1,0 +1,405 @@
+ /* Style Definitions */
+ table.MsoNormalTable {
+ 	mso-style-name: "Table Normal";
+ 	mso-tstyle-rowband-size: 0;
+ 	mso-tstyle-colband-size: 0;
+ 	mso-style-noshow: yes;
+ 	mso-style-priority: 99;
+ 	mso-style-parent: "";
+ 	mso-padding-alt: 0in 5.4pt 0in 5.4pt;
+ 	mso-para-margin-top: 0in;
+ 	mso-para-margin-right: 0in;
+ 	mso-para-margin-bottom: 8.0pt;
+ 	mso-para-margin-left: 0in;
+ 	line-height: 107%;
+ 	mso-pagination: widow-orphan;
+ 	font-size: 11.0pt;
+ 	font-family: "Calibri", sans-serif;
+ 	mso-ascii-font-family: Calibri;
+ 	mso-ascii-theme-font: minor-latin;
+ 	mso-hansi-font-family: Calibri;
+ 	mso-hansi-theme-font: minor-latin;
+ 	mso-bidi-font-family: "Times New Roman";
+ 	mso-bidi-theme-font: minor-bidi;
+ 	mso-font-kerning: 1.0pt;
+ 	mso-ligatures: standardcontextual;
+ }
+
+ table.MsoTableGrid {
+ 	mso-style-name: "Table Grid";
+ 	mso-tstyle-rowband-size: 0;
+ 	mso-tstyle-colband-size: 0;
+ 	mso-style-priority: 39;
+ 	mso-style-unhide: no;
+ 	border: solid windowtext 1.0pt;
+ 	mso-border-alt: solid windowtext .5pt;
+ 	mso-padding-alt: 0in 5.4pt 0in 5.4pt;
+ 	mso-border-insideh: .5pt solid windowtext;
+ 	mso-border-insidev: .5pt solid windowtext;
+ 	mso-para-margin: 0in;
+ 	mso-pagination: widow-orphan;
+ 	font-size: 11.0pt;
+ 	font-family: "Calibri", sans-serif;
+ 	mso-ascii-font-family: Calibri;
+ 	mso-ascii-theme-font: minor-latin;
+ 	mso-hansi-font-family: Calibri;
+ 	mso-hansi-theme-font: minor-latin;
+ 	mso-bidi-font-family: "Times New Roman";
+ 	mso-bidi-theme-font: minor-bidi;
+ 	mso-font-kerning: 1.0pt;
+ 	mso-ligatures: standardcontextual;
+ }
+
+ table.MsoTable15Plain1 {
+ 	mso-style-name: "Plain Table 1";
+ 	mso-tstyle-rowband-size: 1;
+ 	mso-tstyle-colband-size: 1;
+ 	mso-style-priority: 41;
+ 	mso-style-unhide: no;
+ 	border: solid #BFBFBF 1.0pt;
+ 	mso-border-themecolor: background1;
+ 	mso-border-themeshade: 191;
+ 	mso-border-alt: solid #BFBFBF .5pt;
+ 	mso-border-themecolor: background1;
+ 	mso-border-themeshade: 191;
+ 	mso-padding-alt: 0in 5.4pt 0in 5.4pt;
+ 	mso-border-insideh: .5pt solid #BFBFBF;
+ 	mso-border-insideh-themecolor: background1;
+ 	mso-border-insideh-themeshade: 191;
+ 	mso-border-insidev: .5pt solid #BFBFBF;
+ 	mso-border-insidev-themecolor: background1;
+ 	mso-border-insidev-themeshade: 191;
+ 	mso-para-margin: 0in;
+ 	mso-pagination: widow-orphan;
+ 	font-size: 11.0pt;
+ 	font-family: "Calibri", sans-serif;
+ 	mso-ascii-font-family: Calibri;
+ 	mso-ascii-theme-font: minor-latin;
+ 	mso-hansi-font-family: Calibri;
+ 	mso-hansi-theme-font: minor-latin;
+ 	mso-bidi-font-family: "Times New Roman";
+ 	mso-bidi-theme-font: minor-bidi;
+ 	mso-font-kerning: 1.0pt;
+ 	mso-ligatures: standardcontextual;
+ }
+
+ table.MsoTable15Plain1FirstRow {
+ 	mso-style-name: "Plain Table 1";
+ 	mso-table-condition: first-row;
+ 	mso-style-priority: 41;
+ 	mso-style-unhide: no;
+ 	mso-ansi-font-weight: bold;
+ 	mso-bidi-font-weight: bold;
+ }
+
+ table.MsoTable15Plain1LastRow {
+ 	mso-style-name: "Plain Table 1";
+ 	mso-table-condition: last-row;
+ 	mso-style-priority: 41;
+ 	mso-style-unhide: no;
+ 	mso-tstyle-border-top: 1.5pt double #BFBFBF;
+ 	mso-tstyle-border-top-themecolor: background1;
+ 	mso-tstyle-border-top-themeshade: 191;
+ 	mso-ansi-font-weight: bold;
+ 	mso-bidi-font-weight: bold;
+ }
+
+ table.MsoTable15Plain1FirstCol {
+ 	mso-style-name: "Plain Table 1";
+ 	mso-table-condition: first-column;
+ 	mso-style-priority: 41;
+ 	mso-style-unhide: no;
+ 	mso-ansi-font-weight: bold;
+ 	mso-bidi-font-weight: bold;
+ }
+
+ table.MsoTable15Plain1LastCol {
+ 	mso-style-name: "Plain Table 1";
+ 	mso-table-condition: last-column;
+ 	mso-style-priority: 41;
+ 	mso-style-unhide: no;
+ 	mso-ansi-font-weight: bold;
+ 	mso-bidi-font-weight: bold;
+ }
+
+ table.MsoTable15Plain1OddColumn {
+ 	mso-style-name: "Plain Table 1";
+ 	mso-table-condition: odd-column;
+ 	mso-style-priority: 41;
+ 	mso-style-unhide: no;
+ 	mso-tstyle-shading: #F2F2F2;
+ 	mso-tstyle-shading-themecolor: background1;
+ 	mso-tstyle-shading-themeshade: 242;
+ }
+
+ table.MsoTable15Plain1OddRow {
+ 	mso-style-name: "Plain Table 1";
+ 	mso-table-condition: odd-row;
+ 	mso-style-priority: 41;
+ 	mso-style-unhide: no;
+ 	mso-tstyle-shading: #F2F2F2;
+ 	mso-tstyle-shading-themecolor: background1;
+ 	mso-tstyle-shading-themeshade: 242;
+ }
+
+ /* Font Definitions */
+ @font-face {
+ 	font-family: "Cambria Math";
+ 	panose-1: 2 4 5 3 5 4 6 3 2 4;
+ 	mso-font-charset: 0;
+ 	mso-generic-font-family: roman;
+ 	mso-font-pitch: variable;
+ 	mso-font-signature: 3 0 0 0 1 0;
+ }
+
+ @font-face {
+ 	font-family: Calibri;
+ 	panose-1: 2 15 5 2 2 2 4 3 2 4;
+ 	mso-font-charset: 0;
+ 	mso-generic-font-family: swiss;
+ 	mso-font-pitch: variable;
+ 	mso-font-signature: -469750017 -1073732485 9 0 511 0;
+ }
+
+ @font-face {
+ 	font-family: "Calibri Light";
+ 	panose-1: 2 15 3 2 2 2 4 3 2 4;
+ 	mso-font-charset: 0;
+ 	mso-generic-font-family: swiss;
+ 	mso-font-pitch: variable;
+ 	mso-font-signature: -469750017 -1073732485 9 0 511 0;
+ }
+
+ /* Style Definitions */
+ p.MsoNormal,
+ li.MsoNormal,
+ div.MsoNormal {
+ 	mso-style-unhide: no;
+ 	mso-style-qformat: yes;
+ 	mso-style-parent: "";
+ 	margin-top: 0in;
+ 	margin-right: 0in;
+ 	margin-bottom: 8.0pt;
+ 	margin-left: 0in;
+ 	line-height: 107%;
+ 	mso-pagination: widow-orphan;
+ 	font-size: 11.0pt;
+ 	font-family: "Calibri", sans-serif;
+ 	mso-ascii-font-family: Calibri;
+ 	mso-ascii-theme-font: minor-latin;
+ 	mso-fareast-font-family: Calibri;
+ 	mso-fareast-theme-font: minor-latin;
+ 	mso-hansi-font-family: Calibri;
+ 	mso-hansi-theme-font: minor-latin;
+ 	mso-bidi-font-family: "Times New Roman";
+ 	mso-bidi-theme-font: minor-bidi;
+ 	mso-font-kerning: 1.0pt;
+ 	mso-ligatures: standardcontextual;
+ }
+
+ h1 {
+ 	mso-style-priority: 9;
+ 	mso-style-unhide: no;
+ 	mso-style-qformat: yes;
+ 	mso-style-link: "Heading 1 Char";
+ 	mso-style-next: Normal;
+ 	margin-top: 12.0pt;
+ 	margin-right: 0in;
+ 	margin-bottom: 0in;
+ 	margin-left: 0in;
+ 	line-height: 107%;
+ 	mso-pagination: widow-orphan lines-together;
+ 	page-break-after: avoid;
+ 	mso-outline-level: 1;
+ 	font-size: 16.0pt;
+ 	font-family: "Calibri Light", sans-serif;
+ 	mso-ascii-font-family: "Calibri Light";
+ 	mso-ascii-theme-font: major-latin;
+ 	mso-fareast-font-family: "Times New Roman";
+ 	mso-fareast-theme-font: major-fareast;
+ 	mso-hansi-font-family: "Calibri Light";
+ 	mso-hansi-theme-font: major-latin;
+ 	mso-bidi-font-family: "Times New Roman";
+ 	mso-bidi-theme-font: major-bidi;
+ 	color: #2F5496;
+ 	mso-themecolor: accent1;
+ 	mso-themeshade: 191;
+ 	mso-font-kerning: 1.0pt;
+ 	mso-ligatures: standardcontextual;
+ 	font-weight: normal;
+ }
+
+ h2 {
+ 	mso-style-priority: 9;
+ 	mso-style-qformat: yes;
+ 	mso-style-link: "Heading 2 Char";
+ 	mso-style-next: Normal;
+ 	margin-top: 2.0pt;
+ 	margin-right: 0in;
+ 	margin-bottom: 0in;
+ 	margin-left: 0in;
+ 	line-height: 107%;
+ 	mso-pagination: widow-orphan lines-together;
+ 	page-break-after: avoid;
+ 	mso-outline-level: 2;
+ 	font-size: 13.0pt;
+ 	font-family: "Calibri Light", sans-serif;
+ 	mso-ascii-font-family: "Calibri Light";
+ 	mso-ascii-theme-font: major-latin;
+ 	mso-fareast-font-family: "Times New Roman";
+ 	mso-fareast-theme-font: major-fareast;
+ 	mso-hansi-font-family: "Calibri Light";
+ 	mso-hansi-theme-font: major-latin;
+ 	mso-bidi-font-family: "Times New Roman";
+ 	mso-bidi-theme-font: major-bidi;
+ 	color: #2F5496;
+ 	mso-themecolor: accent1;
+ 	mso-themeshade: 191;
+ 	mso-font-kerning: 1.0pt;
+ 	mso-ligatures: standardcontextual;
+ 	font-weight: normal;
+ }
+
+ p.MsoHeader,
+ li.MsoHeader,
+ div.MsoHeader {
+ 	mso-style-priority: 99;
+ 	mso-style-link: "Header Char";
+ 	margin: 0in;
+ 	mso-pagination: widow-orphan;
+ 	tab-stops: center 3.25in right 6.5in;
+ 	font-size: 11.0pt;
+ 	font-family: "Calibri", sans-serif;
+ 	mso-ascii-font-family: Calibri;
+ 	mso-ascii-theme-font: minor-latin;
+ 	mso-fareast-font-family: Calibri;
+ 	mso-fareast-theme-font: minor-latin;
+ 	mso-hansi-font-family: Calibri;
+ 	mso-hansi-theme-font: minor-latin;
+ 	mso-bidi-font-family: "Times New Roman";
+ 	mso-bidi-theme-font: minor-bidi;
+ 	mso-font-kerning: 1.0pt;
+ 	mso-ligatures: standardcontextual;
+ }
+
+ p.MsoFooter,
+ li.MsoFooter,
+ div.MsoFooter {
+ 	mso-style-priority: 99;
+ 	mso-style-link: "Footer Char";
+ 	margin: 0in;
+ 	mso-pagination: widow-orphan;
+ 	tab-stops: center 3.25in right 6.5in;
+ 	font-size: 11.0pt;
+ 	font-family: "Calibri", sans-serif;
+ 	mso-ascii-font-family: Calibri;
+ 	mso-ascii-theme-font: minor-latin;
+ 	mso-fareast-font-family: Calibri;
+ 	mso-fareast-theme-font: minor-latin;
+ 	mso-hansi-font-family: Calibri;
+ 	mso-hansi-theme-font: minor-latin;
+ 	mso-bidi-font-family: "Times New Roman";
+ 	mso-bidi-theme-font: minor-bidi;
+ 	mso-font-kerning: 1.0pt;
+ 	mso-ligatures: standardcontextual;
+ }
+
+ span.Heading2Char {
+ 	mso-style-name: "Heading 2 Char";
+ 	mso-style-priority: 9;
+ 	mso-style-unhide: no;
+ 	mso-style-locked: yes;
+ 	mso-style-link: "Heading 2";
+ 	mso-ansi-font-size: 13.0pt;
+ 	mso-bidi-font-size: 13.0pt;
+ 	font-family: "Calibri Light", sans-serif;
+ 	mso-ascii-font-family: "Calibri Light";
+ 	mso-ascii-theme-font: major-latin;
+ 	mso-fareast-font-family: "Times New Roman";
+ 	mso-fareast-theme-font: major-fareast;
+ 	mso-hansi-font-family: "Calibri Light";
+ 	mso-hansi-theme-font: major-latin;
+ 	mso-bidi-font-family: "Times New Roman";
+ 	mso-bidi-theme-font: major-bidi;
+ 	color: #2F5496;
+ 	mso-themecolor: accent1;
+ 	mso-themeshade: 191;
+ }
+
+ span.Heading1Char {
+ 	mso-style-name: "Heading 1 Char";
+ 	mso-style-priority: 9;
+ 	mso-style-unhide: no;
+ 	mso-style-locked: yes;
+ 	mso-style-link: "Heading 1";
+ 	mso-ansi-font-size: 16.0pt;
+ 	mso-bidi-font-size: 16.0pt;
+ 	font-family: "Calibri Light", sans-serif;
+ 	mso-ascii-font-family: "Calibri Light";
+ 	mso-ascii-theme-font: major-latin;
+ 	mso-fareast-font-family: "Times New Roman";
+ 	mso-fareast-theme-font: major-fareast;
+ 	mso-hansi-font-family: "Calibri Light";
+ 	mso-hansi-theme-font: major-latin;
+ 	mso-bidi-font-family: "Times New Roman";
+ 	mso-bidi-theme-font: major-bidi;
+ 	color: #2F5496;
+ 	mso-themecolor: accent1;
+ 	mso-themeshade: 191;
+ }
+
+ span.HeaderChar {
+ 	mso-style-name: "Header Char";
+ 	mso-style-priority: 99;
+ 	mso-style-unhide: no;
+ 	mso-style-locked: yes;
+ 	mso-style-link: Header;
+ }
+
+ span.FooterChar {
+ 	mso-style-name: "Footer Char";
+ 	mso-style-priority: 99;
+ 	mso-style-unhide: no;
+ 	mso-style-locked: yes;
+ 	mso-style-link: Footer;
+ }
+
+ .MsoChpDefault {
+ 	mso-style-type: export-only;
+ 	mso-default-props: yes;
+ 	font-family: "Calibri", sans-serif;
+ 	mso-ascii-font-family: Calibri;
+ 	mso-ascii-theme-font: minor-latin;
+ 	mso-fareast-font-family: Calibri;
+ 	mso-fareast-theme-font: minor-latin;
+ 	mso-hansi-font-family: Calibri;
+ 	mso-hansi-theme-font: minor-latin;
+ 	mso-bidi-font-family: "Times New Roman";
+ 	mso-bidi-theme-font: minor-bidi;
+ }
+
+ .MsoPapDefault {
+ 	mso-style-type: export-only;
+ 	margin-bottom: 8.0pt;
+ 	line-height: 107%;
+ }
+
+ /* Page Definitions */
+ @page {
+ 	mso-footnote-separator: url("Windows%20Keys_files/header.html") fs;
+ 	mso-footnote-continuation-separator: url("Windows%20Keys_files/header.html") fcs;
+ 	mso-endnote-separator: url("Windows%20Keys_files/header.html") es;
+ 	mso-endnote-continuation-separator: url("Windows%20Keys_files/header.html") ecs;
+ }
+
+ @page WordSection1 {
+ 	size: 8.5in 11.0in;
+ 	margin: 1.0in 1.0in 1.0in 1.0in;
+ 	mso-header-margin: .5in;
+ 	mso-footer-margin: .5in;
+ 	mso-paper-source: 0;
+ }
+
+ div.WordSection1 {
+ 	page: WordSection1;
+ }
