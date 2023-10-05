@@ -28,6 +28,15 @@
                 <option id="nds" value="MMZXA">Mega-Man ZX Advent</option>
                 <option id="nds" value="MMZC">Mega-Man Zero Collection</option>
             </optgroup>
+            <optgroup label="GBA">
+                <option id="GBA" value="PokemonEmerald">Pokemon Emerald</option>
+                <option id="GBA" value="PokemonFireRed">Pokemon Fire Red</option>
+                <option id="GBA" value="PokemonLeafGreen">Pokemon Leaf Green</option>
+                <option id="GBA" value="PokemonRuby">Pokemon Ruby</option>
+                <option id="GBA" value="PokemonSapphire">Pokemon Sapphire</option>
+                <option id="GBA" value="MKSC">Mario Kart Super Circuit</option>
+                <option id="GBA" value="MK5">Mortal Kombat 5: Deadly Alliance</option>
+            </optgroup>
             <!-- <optgroup label="Playstation 1">
                 <option id="psx" value="GT2">Gran Turismo 2</option>
             </optgroup> -->
@@ -40,16 +49,17 @@
     </div>
     <script>
         let PackSelect = document.getElementById("Packs");
+
         function Start() {
             // if (PackSelect.selectedIndex !== 0) {
-                let Selected = PackSelect.options[PackSelect.selectedIndex].value;
-                let core = PackSelect.options[PackSelect.selectedIndex].id;
-                let x = document.getElementById("container");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
+            let Selected = PackSelect.options[PackSelect.selectedIndex].value;
+            let core = PackSelect.options[PackSelect.selectedIndex].id;
+            let x = document.getElementById("container");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
             // }
             let gname = Selected;
             let total = `./Roms/${gname}.zip`;
@@ -64,7 +74,11 @@
             window.EJS_player = "#game";
             window.EJS_biosUrl = "";
             window.EJS_gameUrl = total;
+            if (core === "GBA") {
+                window.location.href = `https://magnusmarx.github.io/GBA/launcher.html#${gname}`;
+            } else {
             window.EJS_core = core;
+            }
             window.EJS_pathtodata = "./JS/";
             window.EJS_startOnLoaded = true;
             script.src = "./JS/loader.js";
