@@ -97,7 +97,7 @@
     </style>
 </head>
 
-<script>
+<!-- <script>
     window.onload = () => {
         currentURL = window.location.href;
         lowerCaseURL = currentURL.toLowerCase();
@@ -105,6 +105,36 @@
             location.replace(lowerCaseURL);
         }
     };
-</script>
+</script> -->
+
+<body>
+
+    <span class="neg">404&nbsp;<br>&nbsp;Not Found</span>
+    <p>
+        Damn, sum went wrong. This page clearly don't exist, yo.
+        <span id="shocked">&#12542;(&#9678;&#1044;&#12295;)&#12446;</span>
+    </p>
+    <p>
+        * Press CTRL+ALT+DEL to restart your computer. You will<br /> &nbsp; lose unsaved information in any programs that are running.
+    </p>
+    <a href="/">Press any key to continue <blink>_</blink></a>
+
+    <script>
+        let x = document.getElementById("shocked");
+        let isShook = true;
+
+        function alternateGreeting() {
+            if (isShook) {
+                x.innerHTML = '&#12542;(&#9678;&#1044;&#12295;)&#12446;';
+            } else {
+                x.innerHTML = '&#12542;(&#12295;&#1044;&#9678;)&#12446;';
+            }
+
+            isShook = !isShook;
+        }
+        setInterval(alternateGreeting, 1000);
+    </script>
+
+</body>
 
 </html>
