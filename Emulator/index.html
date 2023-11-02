@@ -50,9 +50,19 @@
     </div>
     <script>
         let PackSelect = document.getElementById("Packs");
+        let startButton = document.getElementById("Start");
+
+        function updateButtonState() {
+            if (PackSelect.value === "Select a game:") {
+                startButton.disabled = true;
+            } else {
+                startButton.disabled = false;
+            }
+        }
+        updateButtonState();
+        PackSelect.addEventListener("change", updateButtonState);
 
         function Start() {
-            // if (PackSelect.selectedIndex !== 0) {
             let Selected = PackSelect.options[PackSelect.selectedIndex].value;
             let core = PackSelect.options[PackSelect.selectedIndex].id;
             let x = document.getElementById("container");
@@ -61,7 +71,6 @@
             } else {
                 x.style.display = "none";
             }
-            // }
             let gname = Selected;
             let total = `./Roms/${gname}.zip`;
             event.preventDefault();
