@@ -4,7 +4,6 @@ class EmulatorJS {
         const core = this.config.system;
         /*todo:
         Systems: msx
-        
         Cores:
         - FreeChaF
         - FreeIntv
@@ -70,7 +69,8 @@ class EmulatorJS {
             'gba': 'mgba',
             'vb': 'beetle_vb',
             'n64': 'mupen64plus_next',
-            'nds': 'melonds',
+            // 'nds': 'melonds',
+            'nds': 'desmume',
             'mame2003': 'mame2003_plus',
             'arcade': 'fbneo',
             'psx': 'pcsx_rearmed',
