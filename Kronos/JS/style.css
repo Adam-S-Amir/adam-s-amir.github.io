@@ -102,3 +102,7 @@ button:hover {
     background-color: #666;
     color: #ddd
 }
+
+select>option:first-child {
+    text-align: center;
+}

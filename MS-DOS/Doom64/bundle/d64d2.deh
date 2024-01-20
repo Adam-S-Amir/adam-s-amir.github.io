@@ -1,0 +1,855 @@
+Patch File for DeHackEd v3.0
+# Created with WhackEd4 1.2.2
+# Note: Use the pound sign ('#') to start comment lines.
+
+Doom version = 19
+Patch format = 6
+
+
+Thing 20 (Motherdemon)
+Action sound = 104
+Width = 2621440
+Death frame = 617
+Attack sound = 0
+Reaction time = 1
+Far attack frame = 610
+Bits = 4211206
+Height = 6881280
+Pain sound = 97
+Hit points = 9000
+Injury frame = 779
+First moving frame = 602
+Speed = 25
+Mass = 10000
+Pain chance = 4
+
+Thing 24 (Unused)
+Action sound = 0
+Death sound = 0
+Death frame = 0
+Bits = 0
+Exploding frame = 0
+Pain sound = 0
+Initial frame = 0
+Far attack frame = 0
+First moving frame = 0
+Alert sound = 0
+Respawn frame = 0
+Injury frame = 0
+
+Thing 25 (Nightmare Imp)
+Action sound = 76
+Width = 1310720
+Death sound = 62
+Death frame = 457
+Far attack frame = 766
+Respawn frame = 470
+Bits = 4456454
+Exploding frame = 462
+Height = 3670016
+Pain sound = 27
+Initial frame = 442
+Close attack frame = 766
+Hit points = 60
+Injury frame = 455
+First moving frame = 444
+Alert sound = 39
+Speed = 8
+Mass = 100
+Pain chance = 200
+
+Thing 26 (Big Brain)
+Pain sound = 0
+Death sound = 0
+
+Thing 27 (Demon spawner)
+Bits = 6
+Hit points = 10
+
+Thing 29 (Demon spawn cube)
+Alert sound = 0
+Speed = 1966080
+
+Thing 104 (Voodoo Exploder)
+Bits = 0
+Initial frame = 737
+Hit points = 10
+Height = 1048576
+
+Thing 105 (Chooser Demon)
+Death frame = 271
+Bits = 262150
+Height = 3670016
+Initial frame = 241
+Hit points = 10
+Width = 1310720
+First moving frame = 243
+Speed = 15
+Mass = 500
+
+Thing 109 (One-legged body 2)
+Width = 1048576
+Height = 5505024
+
+Thing 116 (Flames)
+Initial frame = 763
+Width = 1048576
+
+Thing 120 (Nightmare Cacodemon)
+Action sound = 77
+Width = 2031616
+Death sound = 65
+Death frame = 510
+Far attack frame = 726
+Respawn frame = 516
+Reaction time = 4
+Bits = 4473350
+Height = 3670016
+Pain sound = 26
+Initial frame = 502
+Hit points = 400
+Pain chance = 96
+First moving frame = 503
+Alert sound = 42
+Speed = 12
+Mass = 400
+Injury frame = 507
+
+Thing 129 (Hanging body 1)
+Bits = 768
+
+Thing 130 (Hanging body 2)
+Bits = 768
+
+Thing 131 (Hanging body 3)
+Bits = 768
+
+Thing 132 (Hanging body 4)
+Bits = 768
+
+Thing 133 (Hanging body 5)
+Bits = 768
+
+Thing 134 (Hanging body 6)
+Bits = 768
+
+Frame 5
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 13
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 21
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 35
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 47
+Duration = 4
+
+Frame 48
+Duration = 3
+
+Frame 52
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 60
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 71
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 77
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 84
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 185
+Sprite subnumber = 32773
+
+Frame 419
+Sprite subnumber = 32773
+
+Frame 601
+Next frame = 730
+
+Frame 602
+Duration = 3
+Sprite subnumber = 0
+Next frame = 603
+
+Frame 603
+Duration = 2
+Next frame = 751
+
+Frame 604
+Duration = 0
+Sprite subnumber = 32775
+
+Frame 605
+Duration = 10
+Sprite subnumber = 32775
+
+Frame 606
+Duration = 8
+Sprite subnumber = 32775
+
+Frame 607
+Duration = 8
+Sprite subnumber = 32775
+Next frame = 738
+
+Frame 608
+Duration = 8
+Sprite subnumber = 32777
+Next frame = 742
+
+Frame 609
+Duration = 2
+Sprite subnumber = 32773
+Next frame = 612
+
+Frame 610
+Duration = 10
+Sprite subnumber = 4
+
+Frame 611
+Duration = 2
+Sprite subnumber = 32773
+Next frame = 609
+
+Frame 612
+Duration = 0
+Sprite subnumber = 32773
+
+Frame 613
+Duration = 2
+Sprite subnumber = 32774
+
+Frame 614
+Duration = 0
+Sprite subnumber = 32774
+Next frame = 615
+
+Frame 615
+Duration = 1
+Sprite subnumber = 32774
+
+Frame 616
+Duration = 1
+Next frame = 604
+
+Frame 617
+Duration = 20
+Sprite subnumber = 11
+
+Frame 618
+Duration = 10
+Sprite subnumber = 12
+Next frame = 619
+
+Frame 619
+Duration = 8
+Sprite subnumber = 13
+Next frame = 744
+
+Frame 620
+Duration = 4
+Sprite subnumber = 32777
+Next frame = 621
+
+Frame 621
+Duration = 4
+Sprite subnumber = 32777
+
+Frame 622
+Duration = 4
+Sprite subnumber = 32777
+Next frame = 602
+
+Frame 623
+Duration = 6
+Sprite subnumber = 17
+
+Frame 624
+Duration = 6
+Sprite subnumber = 18
+
+Frame 625
+Duration = 48
+Sprite subnumber = 19
+Next frame = 631
+
+Frame 630
+Next frame = 0
+
+Frame 631
+Sprite subnumber = 19
+
+Frame 647
+Sprite subnumber = 0
+
+Frame 685
+Sprite subnumber = 32773
+
+Frame 687
+Sprite subnumber = 32773
+
+Frame 689
+Sprite subnumber = 32773
+
+Frame 691
+Sprite subnumber = 32775
+
+Frame 692
+Sprite subnumber = 32776
+
+Frame 693
+Sprite subnumber = 32777
+
+Frame 694
+Sprite subnumber = 32778
+
+Frame 695
+Sprite subnumber = 32779
+
+Frame 696
+Sprite subnumber = 32780
+
+Frame 697
+Sprite subnumber = 32781
+
+Frame 698
+Sprite subnumber = 32782
+
+Frame 726
+Duration = 5
+Sprite number = 40
+Sprite subnumber = 1
+
+Frame 727
+Duration = 5
+Next frame = 728
+Sprite number = 40
+Sprite subnumber = 2
+
+Frame 728
+Sprite number = 40
+Sprite subnumber = 32771
+
+Frame 729
+Next frame = 506
+Sprite number = 40
+Sprite subnumber = 32771
+
+Frame 730
+Duration = 10
+Sprite number = 45
+Next frame = 601
+
+Frame 731
+Sprite number = 45
+
+Frame 732
+Next frame = 780
+Sprite number = 45
+Sprite subnumber = 1
+
+Frame 733
+Sprite number = 45
+
+Frame 734
+Next frame = 783
+Sprite number = 45
+Sprite subnumber = 2
+
+Frame 735
+Sprite number = 45
+Next frame = 736
+
+Frame 736
+Duration = 3
+Next frame = 801
+Sprite number = 45
+Sprite subnumber = 3
+
+Frame 737
+Duration = 1
+Next frame = 737
+Sprite number = 22
+Sprite subnumber = 32769
+
+Frame 738
+Duration = 8
+Sprite number = 45
+Sprite subnumber = 32775
+
+Frame 739
+Duration = 8
+Sprite number = 45
+Sprite subnumber = 32776
+
+Frame 740
+Duration = 8
+Sprite number = 45
+Sprite subnumber = 32776
+
+Frame 741
+Duration = 8
+Next frame = 743
+Sprite number = 45
+Sprite subnumber = 32776
+
+Frame 742
+Duration = 20
+Next frame = 602
+Sprite number = 45
+Sprite subnumber = 32777
+
+Frame 743
+Duration = 8
+Next frame = 608
+Sprite number = 45
+Sprite subnumber = 32776
+
+Frame 744
+Duration = 8
+Next frame = 747
+Sprite number = 45
+Sprite subnumber = 14
+
+Frame 745
+Duration = 4
+Sprite number = 45
+Sprite subnumber = 32775
+
+Frame 746
+Duration = 6
+Next frame = 750
+Sprite number = 45
+Sprite subnumber = 32776
+
+Frame 747
+Duration = 6
+Sprite number = 45
+Sprite subnumber = 15
+
+Frame 748
+Duration = 6
+Next frame = 623
+Sprite number = 45
+Sprite subnumber = 16
+
+Frame 750
+Duration = 4
+Next frame = 620
+Sprite number = 45
+Sprite subnumber = 32777
+
+Frame 751
+Duration = 2
+Next frame = 731
+Sprite number = 45
+Sprite subnumber = 0
+
+Frame 763
+Duration = 4
+Next frame = 764
+Sprite number = 59
+Sprite subnumber = 32771
+
+Frame 764
+Duration = 4
+Sprite number = 59
+Sprite subnumber = 32772
+
+Frame 765
+Duration = 4
+Next frame = 763
+Sprite number = 59
+Sprite subnumber = 32773
+
+Frame 766
+Duration = 8
+Next frame = 774
+Sprite number = 0
+Sprite subnumber = 4
+
+Frame 774
+Duration = 8
+Next frame = 777
+Sprite number = 0
+Sprite subnumber = 5
+
+Frame 777
+Duration = 6
+Next frame = 444
+Sprite number = 0
+Sprite subnumber = 6
+
+Frame 779
+Duration = 40
+Next frame = 745
+Sprite number = 45
+Sprite subnumber = 10
+
+Frame 780
+Duration = 2
+Next frame = 733
+Sprite number = 45
+Sprite subnumber = 1
+
+Frame 783
+Duration = 2
+Next frame = 735
+Sprite number = 45
+Sprite subnumber = 2
+
+Frame 785
+Duration = 10
+
+Frame 801
+Duration = 2
+Next frame = 602
+Sprite number = 45
+Sprite subnumber = 3
+
+Frame 895
+Duration = 1
+Next frame = 895
+
+Sound 44
+Value = 16
+
+Sound 68
+Value = 8
+
+Sound 96
+Value = 16
+
+Sound 103
+Value = 90
+Zero/One = 1
+
+Pointer 327 (Frame 602)
+Codep Frame = 176
+
+Pointer 328 (Frame 603)
+Codep Frame = 176
+
+Pointer 329 (Frame 604)
+Codep Frame = 255
+
+Pointer 330 (Frame 605)
+Codep Frame = 184
+
+Pointer 331 (Frame 606)
+Codep Frame = 257
+
+Pointer 332 (Frame 607)
+Codep Frame = 184
+
+Pointer 333 (Frame 608)
+Codep Frame = 264
+
+Pointer 334 (Frame 609)
+Codep Frame = 341
+
+Pointer 335 (Frame 610)
+Codep Frame = 184
+
+Pointer 336 (Frame 611)
+Codep Frame = 341
+
+Pointer 337 (Frame 612)
+Codep Frame = 383
+
+Pointer 338 (Frame 613)
+Codep Frame = 341
+
+Pointer 339 (Frame 614)
+Codep Frame = 383
+
+Pointer 340 (Frame 615)
+Codep Frame = 377
+
+Pointer 341 (Frame 616)
+Codep Frame = 380
+
+Pointer 342 (Frame 617)
+Codep Frame = 190
+
+Pointer 343 (Frame 618)
+Codep Frame = 160
+
+Pointer 344 (Frame 620)
+Codep Frame = 711
+
+Pointer 345 (Frame 621)
+Codep Frame = 711
+
+Pointer 346 (Frame 622)
+Codep Frame = 711
+
+Pointer 347 (Frame 631)
+Codep Frame = 783
+
+Pointer 388 (Frame 700)
+Codep Frame = 774
+
+Pointer 403 (Frame 726)
+Codep Frame = 184
+
+Pointer 404 (Frame 727)
+Codep Frame = 184
+
+Pointer 405 (Frame 728)
+Codep Frame = 506
+
+Pointer 406 (Frame 729)
+Codep Frame = 506
+
+Pointer 407 (Frame 730)
+Codep Frame = 174
+
+Pointer 413 (Frame 736)
+Codep Frame = 176
+
+Pointer 414 (Frame 737)
+Codep Frame = 127
+
+Pointer 415 (Frame 738)
+Codep Frame = 184
+
+Pointer 417 (Frame 740)
+Codep Frame = 184
+
+Pointer 418 (Frame 741)
+Codep Frame = 184
+
+Pointer 419 (Frame 743)
+Codep Frame = 184
+
+Pointer 420 (Frame 745)
+Codep Frame = 184
+
+Pointer 421 (Frame 746)
+Codep Frame = 184
+
+Pointer 422 (Frame 750)
+Codep Frame = 711
+
+Pointer 423 (Frame 751)
+Codep Frame = 176
+
+Pointer 424 (Frame 766)
+Codep Frame = 184
+
+Pointer 425 (Frame 774)
+Codep Frame = 184
+
+Pointer 426 (Frame 777)
+Codep Frame = 506
+
+Pointer 427 (Frame 779)
+Codep Frame = 157
+
+Pointer 428 (Frame 780)
+Codep Frame = 176
+
+Pointer 429 (Frame 783)
+Codep Frame = 176
+
+Pointer 445 (Frame 801)
+Codep Frame = 176
+
+Text 405 204
+YOU HAVE ENTERED DEEPLY INTO THE INFESTED
+STARPORT. BUT SOMETHING IS WRONG. THE
+MONSTERS HAVE BROUGHT THEIR OWN REALITY
+WITH THEM, AND THE STARPORT'S TECHNOLOGY
+IS BEING SUBVERTED BY THEIR PRESENCE.
+
+AHEAD, YOU SEE AN OUTPOST OF HELL, A
+FORTIFIED ZONE. IF YOU CAN GET PAST IT,
+YOU CAN PENETRATE INTO THE HAUNTED HEART
+OF THE STARBASE AND FIND THE CONTROLLING
+SWITCH WHICH HOLDS EARTH'S POPULATION
+HOSTAGE.Your bloodthirsty scream shatters the 
+teleport haze.  
+
+Another UAC base tainted by the unending 
+hellspawn.  Its vast silence reminds you 
+of the military morgue.
+
+Once again you find yourself amidst...
+Text 617 276
+YOU HAVE WON! YOUR VICTORY HAS ENABLED
+HUMANKIND TO EVACUATE EARTH AND ESCAPE
+THE NIGHTMARE.  NOW YOU ARE THE ONLY
+HUMAN LEFT ON THE FACE OF THE PLANET.
+CANNIBAL MUTATIONS, CARNIVOROUS ALIENS,
+AND EVIL SPIRITS ARE YOUR ONLY NEIGHBORS.
+YOU SIT BACK AND WAIT FOR DEATH, CONTENT
+THAT YOU HAVE SAVED YOUR SPECIES.
+
+BUT THEN, EARTH CONTROL BEAMS DOWN A
+MESSAGE FROM SPACE: "SENSORS HAVE LOCATED
+THE SOURCE OF THE ALIEN INVASION. IF YOU
+GO THERE, YOU MAY BE ABLE TO BLOCK THEIR
+ENTRY.  THE ALIEN BASE IS IN THE HEART OF
+YOUR OWN HOME CITY, NOT FAR FROM THE
+STARPORT." SLOWLY AND PAINFULLY YOU GET
+UP AND RETURN TO THE FRAY.You cackle as the familiarity of the
+situation occurs to you.  The gateway
+to the demon's domain was too accessible.
+You realize the demons mock you with
+their invitations.
+
+It does not matter...
+
+The demons spawn like rats and you have
+the grade AAA U.A.C. poison they crave.
+Text 312 144
+YOU ARE AT THE CORRUPT HEART OF THE CITY,
+SURROUNDED BY THE CORPSES OF YOUR ENEMIES.
+YOU SEE NO WAY TO DESTROY THE CREATURES'
+ENTRYWAY ON THIS SIDE, SO YOU CLENCH YOUR
+TEETH AND PLUNGE THROUGH IT.
+
+THERE MUST BE A WAY TO CLOSE IT ON THE
+OTHER SIDE. WHAT DO YOU CARE IF YOU'VE
+GOT TO GO THROUGH HELL TO GET TO IT?You smile.
+
+The demons did not expect you to survive 
+this far.  You feel their demonic presence 
+waiting for you...
+
+Let them taste their guts!
+Text 494 224
+THE HORRENDOUS VISAGE OF THE BIGGEST
+DEMON YOU'VE EVER SEEN CRUMBLES BEFORE
+YOU, AFTER YOU PUMP YOUR ROCKETS INTO
+HIS EXPOSED BRAIN. THE MONSTER SHRIVELS
+UP AND DIES, ITS THRASHING LIMBS
+DEVASTATING UNTOLD MILES OF HELL'S
+SURFACE.
+
+YOU'VE DONE IT. THE INVASION IS OVER.
+EARTH IS SAVED. HELL IS A WRECK. YOU
+WONDER WHERE BAD FOLKS WILL GO WHEN THEY
+DIE, NOW. WIPING THE SWEAT FROM YOUR
+FOREHEAD YOU BEGIN THE LONG TREK BACK
+HOME. REBUILDING EARTH OUGHT TO BE A
+LOT MORE FUN THAN RUINING IT WAS.
+Finally...
+
+The Mother of all demons is dead!
+
+The blood pours from your eyes as you
+stand in defiance.
+
+As the only marine to endure the
+slaughter, you decide to remain in
+Hell and ensure no demon ever rises
+again.
+
+THE END
+Text 164 76
+CONGRATULATIONS, YOU'VE FOUND THE SECRET
+LEVEL! LOOKS LIKE IT'S BEEN BUILT BY
+HUMANS, RATHER THAN DEMONS. YOU WONDER
+WHO THE INMATES OF THIS CORNER OF HELL
+WILL BE.CONGRATULATIONS!
+
+You found...
+
+HECTIC
+
+Only the best will reap its rewards.
+Text 92 91
+CONGRATULATIONS, YOU'VE FOUND THE
+SUPER SECRET LEVEL!  YOU'D BETTER
+BLAZE THROUGH THIS ONE!
+You wretch as an acrid odor
+assaults you.
+
+No nightmare could have
+prepared you for this...
+Text 21 15
+THE SPIDER MASTERMINDTHE MOTHERDEMON
+Text 17 14
+level 1: entryway1:Staging Area
+Text 19 17
+level 2: underhalls2:The Terraformer
+Text 20 18
+level 3: the gantlet3:Main Engineering
+Text 18 14
+level 4: the focus4:Holding Area
+Text 26 13
+level 5: the waste tunnels5:Tech Center
+Text 20 15
+level 6: the crusher6:Outpost Omega
+Text 20 14
+level 7: dead simple7:Even Simpler
+Text 25 16
+level 8: tricks and traps8:Alpha Quadrant
+Text 16 14
+level 9: the pit9:Research Lab
+Text 24 16
+level 10: refueling base10:Final Outpost
+Text 29 16
+level 11: 'o' of destruction!11:Cat And Mouse
+Text 21 15
+level 12: the factory12:The Bleeding
+Text 18 14
+level 13: downtown13:Terror Core
+Text 25 11
+level 14: the inmost dens14:The Lair
+Text 25 16
+level 15: industrial zone15:Altar Of Pain
+Text 17 15
+level 16: suburbs16:Dark Citadel
+Text 19 19
+level 17: tenements17:Eye Of The Storm
+Text 23 15
+level 18: the courtyard18:Dark Entries
+Text 21 13
+level 19: the citadel19:Blood Keep
+Text 17 11
+level 20: gotcha!20:Hardcore
+Text 17 18
+level 21: nirvana21:Watch Your Step
+Text 23 15
+level 22: the catacombs22:Spawned Fear
+Text 24 13
+level 23: barrels o' fun23:The Spiral
+Text 19 12
+level 24: the chasm24:Breakdown
+Text 20 11
+level 25: bloodfalls25:Pitfalls
+Text 29 13
+level 26: the abandoned mines26:Playground
+Text 23 18
+level 27: monster condo27:Burnt Offerings
+Text 26 16
+level 28: the spirit world28:Unholy Temple
+Text 24 12
+level 29: the living end29:No Escape
+Text 21 17
+level 30: icon of sin30:The Absolution
+Text 21 9
+level 31: wolfenstein31:Hectic
+Text 16 14
+level 32: grosse32:In The Void

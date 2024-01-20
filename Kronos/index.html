@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Kronos</title>
     <link rel="stylesheet" href="./JS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
 </head>
 
 <body>
     <div id="container">
-        <select id="Packs" class="dropdown">
-            <option style="text-align: center;">Select a game:</option>
+        <select title="Game Select" id="Packs" class="dropdown">
+            <option>Select a game:</option>
             <optgroup label="SNES">
                 <option id="snes" value="smariokart">Super Mario Kart</option>
             </optgroup>
@@ -42,8 +44,8 @@
                 <option id="psx" value="GT2">Gran Turismo 2</option>
             </optgroup> -->
         </select>
-        <div id=box>
-            <input type=file id=input>
+        <div id="box">
+            <input title="Drop Files" type="file" id="input">
             or drag a<br>ROM file here
         </div>
         <button id="Start" onclick="Start();">Start</button>
