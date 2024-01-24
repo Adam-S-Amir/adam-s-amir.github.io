@@ -35,7 +35,7 @@ function Start() {
     window.EJS_biosUrl = "";
     window.EJS_gameUrl = total;
     if (core === "GBA") {
-        window.location.href = `https://adam-s-amir.github.io/GBA/launcher.html#${gname}`;
+        window.location.href = `https://magnusware-libs.vercel.app/GBA/launcher.html#${gname}`;
     } else {
         window.EJS_core = core;
     }
