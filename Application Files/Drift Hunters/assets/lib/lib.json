@@ -1,0 +1,10 @@
+{
+    "TOTAL_MEMORY": 1073741824,
+    "dataUrl": "https://github.com/Adam-S-Amir/magnusware-libs/releases/download/Libs/lib.data.unityweb",
+    "asmCodeUrl": "./lib.code.unityweb",
+    "asmMemoryUrl": "./lib.memory.unityweb",
+    "asmFrameworkUrl": "./lib.framework.unityweb",
+    "backgroundUrl": "../images/cover.jpg",
+    "splashScreenStyle": "Light",
+    "backgroundColor": "#FFFFFF"
+}
