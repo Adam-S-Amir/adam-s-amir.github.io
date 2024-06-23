@@ -1,0 +1,179 @@
+<html>
+<body>
+
+<link rel="shortcut icon" href=""/>
+
+<title >Game Settings</title>
+
+<body style="background-color:Black;">
+<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="stylesheet.css">
+<link href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+<style>
+/* Hide scrollbar but still be able to scroll */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+</style>
+<br>
+<center><font style="text-align: center;font-family: 'Sedgwick Ave Display', sans-serif; background-color: Black; border-color: Black; color: Cyan; font-size:34px">Game Settings</center></font>
+<br>
+<br>
+<center><font size="2" color="Cyan" font face="Shojumaru" <p>(Values Will Be Set To Default If Nothing Is Entered)</p></center>
+<br>
+<br>
+<form action="Game1.html" method="get">
+
+  <center>
+  <label for="speed">
+  <font size="4" color="Cyan" font face="Audiowide">How <b>Fast</b> Should The T-rex Be?</label>  
+  
+  <input style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" type="number" id="pd" name="pd" min="1" max="100"><br><br>
+  
+  <label for="acceleration">
+  <font size="4" color="Cyan" font face="Audiowide">How Much Should The Game Canvas <b>Accelerate</b>?</label>
+  <input style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" type="number" id="cc" name="cc" min="1" max="100"><br><br>
+  
+  <label for="clear_time">
+  <font size="4" color="Cyan" font face="Audiowide">When (In Milliseconds) Should The <b>First Cactus</b> Appear?</b></label>
+  <input style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" type="number" id="clrt" name="clrt" min="1" max="200"><br><br>
+ 
+ 
+  <label for="score">
+  <font size="4" color="Cyan" font face="Audiowide">How Fast Should The <b>Score</b> Be? </label>
+  <select style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" id="scr" name="scr">
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="16.666666666666668">Normal</option> 
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value=".1">Medium</option>
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value=".01">Fast</option>
+  </select><br><br> 
+  
+  <label for="auto">
+  <font size="4" color="Cyan" font face="Audiowide">Do You Want <b>500,000</b> Points? </label>
+  <select style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" id="out" name="out"> 
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="0">No</option>
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="99999900">Yes</option>
+  </select><br><br>
+  
+  <label for="retry">
+  <font size="4" color="Cyan" font face="Audiowide">Do You Want An <b>Automatic</b> Restart After You Die? </label>
+  <select style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" id="try" name="try"> 
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="2">No</option>
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="1">Yes</option>
+  </select><br><br>
+  
+<label for="glitch">
+  <font size="4" color="Cyan" font face="Audiowide">Do You Want To <b>Break</b> The Game? </label>
+  <select style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" id="gli" name="gli"> 
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="2">No</option>
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="1">Yes</option>
+  </select><br><br>
+
+  <label for="inv">
+  <font size="4" color="Cyan" font face="Audiowide">Do You Want To Be <b>Invincible?</b> </label>  
+  <select style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" id="ivc" name="ivc">
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="2">No</option>
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="1">Yes</option>
+  </select><br><br>
+
+  <label for="still">
+  <font size="4" color="Cyan" font face="Audiowide">Do You Want To Sit <b>Still?</b> </label>
+  <select style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" id="sit" name="sit">
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="2">No</option>
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="1">Yes</option>
+  </select><br><br>
+  
+
+  <label for="bot">
+  <font size="4" color="Cyan" font face="Audiowide">Do You Want To Activate The <b>Bot?</b> </label>  
+  <select style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" id="XD" name="XD">
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="2"<disabled>No</option></disabled>
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="1"<disabled>Yes</option></disabled>
+  </select><br><br>
+  
+  <label for="backward">
+  <font size="4" color="Cyan" font face="Audiowide">Do You Want To Go <b>Backwards</b> When You Hit An Obstacle? </label>  
+  <select style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" id="bax" name="bax">
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="2">No</option>
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="1">Yes</option>
+  </select><br><br>
+  </center>
+
+  <br>
+  <br>
+  <p>
+  <center><font size="5" color="Cyan" font face="Sedgwick Ave Display">(Disclaimer: THE FOLLOWING SETTINGS WILL NOT WORK WITH MOBILE USERS!)</center></font>
+  </p>
+  <br>
+  <br>
+
+  <center>
+  <label for="laser">
+  <font size="4" color="Cyan" font face="Audiowide">Do You Want To Shoot <b>Lasers?</b> (Use "B" And "Right Arrow" Keys) </label>
+  <select style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" id="lasergod" name="lasergod">
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="2">No</option>
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="1">Yes</option>
+  </select><br><br>
+
+  <label for="gamb">
+  <font size="4" color="Cyan" font face="Audiowide">Do You Want To Gamble With The <b>"L" Key?</b> </label>  
+  <select style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" id="L" name="L">
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="2">No</option>
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="1">Yes</option>
+  </select><br><br>
+
+  <label for="WASD">
+  <font size="4" color="Cyan" font face="Audiowide">Do You Want To <b> Manually </b>Increase Your Score? (Use "W" "A" "S" AND "D" Keys) </label>   
+  <select style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" id="man" name="man">
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="2">No</option>
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="1">Yes</option>
+  </select><br><br>
+
+  <label for="done">
+  <font size="4" color="Cyan" font face="Audiowide">Do You Want To <b> Delete</b> Objects? (Use "G" Key.) </label>   
+  <select style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" id="man" name="man">
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="2">No</option>
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="1">Yes</option>
+  </select><br><br>
+
+  
+  <label for="arrow">
+  <font size="4" color="Cyan" font face="Audiowide">Do You Want To <b> Move </b>Left And Right? </label>   
+  <select style="background-color: Cyan; border-color: Black; color: Black; font-family: 'Sedgwick Ave Display', sans-serif;" id="key" name="key">
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="2">No</option>
+  <option style="background-color: Cyan; font-family: 'Sedgwick Ave Display', sans-serif;" value="1">Yes</option>
+  </select><br><br>
+  </center>
+  
+  <center><input type="submit" style="font-family: 'Sedgwick Ave Display', sans-serif; background-color: Cyan; border-color: Black; color: Black" value="Play!"></center>
+  
+  <form>
+         
+      </form>
+  
+</form>
+
+<div id="container">
+        <button type="submit"  style="background-color: Black; border-color: Black; color: Black" formaction="codes.html"><font size="4" color="Cyan" font face="Shojumaru">Made By <b>Magnus Marks</b></button>
+</div>
+
+<script>
+
+console.log("	  _______      _________      _____       ______     _\n     / _____ \\    |____ ____|    / ___ \\     | ____ \\   | |\n    / /     \\_\\       | |       / /   \\ \\    | |   \\ \\  | |\n    | |               | |      / /     \\ \\   | |   | |  | |\n    \\ \\______         | |      | |     | |   | |___/ /  | |\n     \\______ \\        | |      | |     | |   |  ____/   | |\n            \\ \\       | |      | |     | |   | |        | |\n     _      | |       | |      \\ \\     / /   | |        |_|\n    \\ \\_____/ /       | |       \\ \\___/ /    | |         _\n     \\_______/        |_|        \\_____/     |_|        |_|\n\n     May you explain why you are you trying to modify the code of this website?");
+
+</script>
+
+<script>
+
+console.log("I do not understand what your objective may be, carry on, User 626.");
+
+</script>
+
+</body>
+</html>
