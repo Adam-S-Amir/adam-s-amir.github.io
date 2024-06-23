@@ -1,0 +1,28 @@
+.controls {
+  overflow: auto;
+}
+
+.ai-button, #feedback-container {
+  position: relative;
+  float: center;
+  background: #bbada0;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 3px;
+  color: white;
+  margin-top: 8px;
+  text-align: center;
+}
+
+#run-button-container {
+  float: right;
+}
+
+#hint-button-container, #feedback-container {
+  float: left;
+}
+
+#feedback-container {
+  margin-left: 1em;
+  font-weight: bold;
+}

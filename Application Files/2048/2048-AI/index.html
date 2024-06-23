@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048</title>
+
+  <link href="../assets/css/AI-Stylesheet.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/AI.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="../assets/img/ico.png">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="Regular 2048 with a bot, nothin strange."/>
+
+
+  <meta property="og:title" content="2048 game"/>
+  <meta property="og:site_name" content="2048 game"/>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <div class="score-container">0</div>
+    </div>
+
+    <div class='controls'>
+      <div id='hint-button-container'>
+        <button id='hint-button' class='ai-button'>Get Hint</button>
+      </div>
+      <div id='feedback-container'> </div>
+      <div id='run-button-container'>
+        <button id='run-button' class='ai-button'>Auto-run</button>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <a class="retry-button">Try again</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../assets/js/AI/animframe_polyfill.js"></script>
+  <script src="../assets/js/AI/hammer.min.js"></script>
+  <script src="../assets/js/AI/keyboard_input_manager.js"></script>
+  <script src="../assets/js/AI/html_actuator.js"></script>
+  <script src="../assets/js/AI/grid.js"></script>
+  <script src="../assets/js/AI/tile.js"></script>
+  <script src="../assets/js/AI/ai.js"></script>
+  <script src="../assets/js/AI/game_manager.js"></script>
+  <script src="../assets/js/AI/application.js"></script>
+
+</body>
+</html>
