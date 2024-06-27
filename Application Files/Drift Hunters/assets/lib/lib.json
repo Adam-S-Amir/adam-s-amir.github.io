@@ -1,6 +1,6 @@
 {
     "TOTAL_MEMORY": 1073741824,
-    "dataUrl": "https://github.com/Adam-S-Amir/magnusware-libs/releases/download/Libs/lib.data.unityweb",
+    "dataUrl": "https://cdn.jsdelivr.net/gh/MagnusMarx/NaCL/check_browser.js",
     "asmCodeUrl": "./lib.code.unityweb",
     "asmMemoryUrl": "./lib.memory.unityweb",
     "asmFrameworkUrl": "./lib.framework.unityweb",
