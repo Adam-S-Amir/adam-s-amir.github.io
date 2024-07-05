@@ -1,0 +1,93 @@
+html {
+	background: #151515;
+	font: 1em Arial;
+	margin: 0;
+	padding: 0;	
+}
+
+::-webkit-scrollbar {
+	width: 0;
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: transparent;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+@font-face {
+	font-family: 'wendy';
+	src: url("../font/8bit.ttf");
+}
+
+@font-face {
+	font-family: 'danielbk';
+	src: url("../font/danielbk.ttf");
+}
+
+#game {
+	width: 970px;
+	line-height: 0px;
+	text-align: center;
+}
+
+canvas {
+	border-left: solid 6px #000;
+	border-right: solid 6px #000;
+	margin: auto;
+}
+
+#canvas {
+	color: #fff;
+}
+
+#uicanvas {
+	background: #000;
+}
+
+#bgcanvas {
+	border-bottom: solid 0px #323131;
+	position: absolute;
+	z-index: -10;
+}
+
+#editorlink {
+	margin: 10px auto;
+	text-align: center;
+}
+
+#editorlink ul {
+	margin: 30px auto;
+	list-style-type: none;
+	text-align: center;
+	color: #aaa;
+}
+
+#editorlink>a {
+	background: #aaa;
+	font-weight: bold;
+	text-decoration: none;
+	color: #151515;
+	padding: 8px;
+}
+
+#editorlink>a:hover {
+	background: #00c4d3;
+	font-weight: bold;
+	text-decoration: none;
+	color: #151515;
+	padding: 8px;
+}
+
+#editorlink ul a {
+	color: #00c4d3;
+	font-weight: bold;
+}
+
+#editorlink ul a:hover {
+	text-decoration: underline;
+}
