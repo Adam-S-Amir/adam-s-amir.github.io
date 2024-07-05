@@ -1,0 +1,124 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    color: white;
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    background-color: #000000;
+    margin: 0px;
+    overflow: hidden;
+}
+
+canvas {
+    image-rendering: optimizeSpeed;
+    -webkit-interpolation-mode: nearest-neighbor;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+div.container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*
+@media screen and (min-aspect-ratio: 256/240) {
+    canvas {
+        overflow-y: auto;
+        height: 100%;
+    }
+}
+
+@media screen and (max-aspect-ratio: 256/240) {
+    canvas {
+        overflow-x: auto;
+        width: 100%;
+    }
+}
+*/
+
+#container-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+#loading,
+#mobile-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobile-info {
+    display: none;
+    flex-direction: column;
+}
+
+#toggleSound {
+    left: 5px;
+    bottom: 5px;
+    position: absolute;
+}
+
+#info {
+    right: 5px;
+    bottom: 5px;
+    position: absolute;
+}
+
+#version {
+    top: 5px;
+    right: 5px;
+    position: absolute;
+}
+
+#hashtag {
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    display: table;
+}
+
+#hashtag * {
+    display: table-cell;
+    vertical-align: middle;
+}
