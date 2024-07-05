@@ -1,0 +1,16 @@
+body {
+    background: #222;
+}
+#hplogo {
+    image-rendering: optimizeSpeed;
+    -webkit-interpolation-mode: nearest-neighbor;
+    background: url('../img/loading.png') 40px 0 no-repeat;
+    cursor: default;
+    display: inline-block;
+    height: 197px;
+    outline: none;
+    overflow: hidden;
+    text-align: left;
+    text-decoration: none;
+    width: 650px;
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+
+<head>
+  <title>Frank Zamboni's 112th Birthday</title>
+  <link rel="stylesheet" href="./assets/css/stylesheet.css">
+</head>
+
+<body>
+  <center>
+    <style>
+    </style>
+    <a href="javascript:void(0)" id="hplogo" dir="ltr" tabindex="0"></a>
+    <script>
+      (function () {
+        window.google || (window.google = {});
+        google.doodle || (google.doodle = {});
+        if (!google.doodle || !google.doodle.loaded) {
+          var a = ["google", "doodle", "loaded"],
+            b = this;
+          !(a[0] in b) && b.execScript && b.execScript("var " + a[0]);
+          for (var c; a.length && (c = a.shift());) !a.length ? b[c] = !0 : b = b[c] ? b[c] : b[c] = {};
+          google.doodle.standalone = 1;
+          var d = document.createElement("script");
+          d.src = "./assets/js/index.js";
+          d.async = !0;
+          document.body.appendChild(d)
+        };
+      })();
+    </script>
