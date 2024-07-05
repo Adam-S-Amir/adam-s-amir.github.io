@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rocket Custa</title>
+    <link rel="shortcut icon" href="./assets/img/icon-16.png">
+    <meta name="viewport" content="width=device-width, inital-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" type="text/css">
+</head>
+
+<body>
+
+<noscript>Rocket Custa uses javascript in order to work correctly. You need to enable javascript in your browser.</noscript>
+
+<audio id="audio-background" no-controls autoplay loop>
+    <source src="./assets/audio/background-music.ogg" type="audio/ogg">
+</audio>
+
+<audio id="audio-explosion" no-controls>
+    <source src="./assets/audio/explosion.ogg" type="audio/ogg">
+</audio>
+
+<canvas id="rocket-custa"></canvas>
+
+<div class="game-over"></div>
+
+<nav class="game-navigation">
+    <div class="logo"></div>
+    <h2 class="name">ROCKET CUSTA</h2>
+    <a id="game-start" class="button" onclick="audio()" title="Play">Play</a>
+    <div id="game-user-level">0</div>
+    <div id="game-user-score">0</div>
+    <h3 class="created-by">Magnus Marks</h3>
+</nav>
+
+<section class="game-section">
+    <div class="wrapper">
+        <h1>Highscores</h1>
+        <div class="content">
+            <div id="game-highscore">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a id="game-audio" class="on" href="javascript:void(null)"></a>
+
+<div id="game-level">Level 1</div>
+<div id="game-score">0</div>
+<div id="game-fps">0</div>
+
+<div id="game-credits"></div>
+
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/index.js"></script>
+
+</body>
+</html>
