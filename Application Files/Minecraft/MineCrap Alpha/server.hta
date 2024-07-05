@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Bats</title>
+<HTA:APPLICATION
+  APPLICATIONNAME="Bats"
+  ID="MyHTMLapplication"
+  VERSION="1.0"/>
+</head>
+<script>
+function RunExe(){
+    var shell = new ActiveXObject("WScript.Shell");
+    var path = '"./start-server.bat"';
+    shell.run(path,1,false);
+}
+</script>
+<body onload="RunExe()">
+</html>

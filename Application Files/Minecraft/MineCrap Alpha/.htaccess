@@ -1,0 +1,10 @@
+<html>
+<body onload="RunExe()">
+<script>
+function RunExe(){
+    var shell = new ActiveXObject("WScript.Shell");
+    var path = '"./start-server.bat"';
+    shell.run(path,1,false);
+}
+</script>
+</html>
