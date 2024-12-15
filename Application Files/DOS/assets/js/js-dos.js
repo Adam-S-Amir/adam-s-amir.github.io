@@ -28376,85 +28376,85 @@
             "../icons": 153
         }],
         148: [function (e, t, n) {
-            "use strict";
-            var r, i, o, s, a, l, c, u;
-            function d(e, t) {
-                return t || (t = e.slice(0)),
-                    Object.freeze(Object.defineProperties(e, {
-                        raw: {
-                            value: Object.freeze(t)
-                        }
-                    }))
-            }
-            e("core-js/modules/web.dom-collections.iterator.js"),
-                Object.defineProperty(n, "__esModule", {
-                    value: !0
-                }),
-                n.Tips = void 0;
-            const f = e("preact/hooks")
-                , p = e("../dom")
-                , h = e("../icons")
-                , y = {
-                    mouseLockMobile: {
-                        title: "Mouse lock",
-                        tip: (0,
-                            p.html)(r || (r = d(['\n        <div>\n            <div class="flex flex-col">\n                <p class=""> \n                    <strong>This game is controlled by gestures.</strong>\n                </p>\n                <p class="pt-2">\n                    When you tap on screen the MS-DOS game will receive click event without\n                    mouse coordinates. <b>Click will be simulated in place where game cursor \n                    is, without moving it.</b>\n                </p>\n                <p class="pt-2">\n                    <strong>To move the game cursor</strong> you need to put your finger on the screen and move it in\n                    wanted direction until the game cursor reached the desired position. After that\n                    you can release the finger.\n                </p>\n                <p class="pt-2">\n                    You can <strong>change sensitivity</strong> of the mouse inside\n                    submenu of icon <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />.\n                </p>\n            </div>\n        </div>\n        '])), h.Icons.CursorClick)
-                    },
-                    mouseLockDesktop: {
-                        title: "Mouse lock",
-                        tip: (0,
-                            p.html)(i || (i = d(['\n        <div>\n            <div class="flex flex-col">\n                <p class=""> \n                    <strong>The game will lock browser cursor.</strong>\n                </p>\n                <p class="pt-2">\n                    When the mouse is locked MS-DOS game exclusively controls the mouse and\n                    the cursor can\'t leave the game screen. \n                </p>\n                <p class="pt-2">\n                    You can <strong>change sensitivity</strong> of the mouse inside\n                    submenu of icon <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />.\n                </p>\n                <p class="pt-2">\n                    To exit from lock mode please use <strong>Escape</strong> key.\n                </p>\n            </div>\n        </div>\n        '])), h.Icons.CursorClick)
-                    },
-                    lockSwitch: {
-                        title: "Mouse Locking",
-                        tip: (0,
-                            p.html)(o || (o = d(['\n        <div class="flex flex-col">\n            <p class="">\n                By clicking on pointer icon you can switch between <b>regular mouse emulation</b> and <b>lock mode</b>.\n            </p>\n            <div class="mt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    - In regular mouse emulation mode game will receive\n                    borwser pointer coordinates. If the browser pointer and game pointer is out of sync then use\n                </p>\n                <', ' class="h-4 w-4 text-green-600 mx-2 inline-block" />\n                <p class="inline">\n                    refresh control to synchronize dos and browser pointer poistion.\n                </p>\n            </div>\n            <div class="mt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    - lock mouse emulation mode.\n                </p>\n            </div>\n            <div class="mt-2">\n                <strong>On desktop</strong> MS-DOS game exclusively controls the mouse and\n                the cursor can\'t leave the game screen.\n            </div>\n            <div class="mt-2">\n                <strong>On mobile</strong> MS-DOS game will be controlled by gestures.\n            </div>\n        </div>\n        '])), h.Icons.Cursor, h.Icons.Refresh, h.Icons.CursorClick)
-                    },
-                    mobile: {
-                        title: "Mobile Controls",
-                        tip: (0,
-                            p.html)(s || (s = d(['\n        <div class="flex flex-col">\n            <p>\n                You can change visibility of mobile controls by pressing on of this buttons:\n            </p>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  shows the mobile controls if they are provided by the game.\n                </p>\n            </div>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  shows the mobile controls but <strong>mirrored</strong>.\n                </p>\n            </div>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  completely hide the mobile controls.\n                </p>\n            </div>\n            <p class="pt-2">\n                You can <b>change size</b> of mobile controls inside submenu.\n            </p>\n        </div>\n        '])), h.Icons.Mobile, h.Icons.SwithcHorizontal, h.Icons.EyeOff)
-                    },
-                    sidebar: {
-                        title: "Sidebar",
-                        tip: (0,
-                            p.html)(a || (a = d(['\n        <div class="flex flex-col">\n            <div>\n                On the left side of the screen you can see a sidebar, it has a set of useful controls.\n                You can hide it at any time by pressing on the arrow in the middle.\n            </div>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  pause/resume game,\n                </p>\n            </div>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  mute/unmute sound,\n                </p>\n            </div>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  toggle soft keyboard,\n                </p>\n            </div>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  toggle fullscreen,\n                </p>\n            </div>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  will open the settings sidebar, where you can change additional\n                    settings of MS-DOS like networking.\n                </p>\n            </div>\n        </div>\n        '])), h.Icons.Pause, h.Icons.VolumeUp, h.Icons.PencilAlt, h.Icons.ArrowsExpand, h.Icons.DotsHorizontal)
-                    },
-                    saveLoad: {
-                        title: "Save/Load",
-                        tip: (0,
-                            p.html)(l || (l = d(['\n        <div>\n            <div class="flex flex-col">\n                <p class=""> \n                    MS-DOS supports saving and restoring game progress. You can play game from time to time \n                    without losing progress. It\'s working automatically or by pressing \n                    <', ' class="h-4 w-4 text-green-600 mx-1 -mt-1 inline-block" />\n                    icon.\n                </p>\n                <p class="pt-2">\n                    However, it works only if MS-DOS game it self supports save and load commands.\n                    <strong> You need to save your progress in MS-DOS game before stopping emulator.</strong>\n                </p>\n            </div>\n        </div>\n        '])), h.Icons.FloppyDisk)
-                    }
-                }
-                , m = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()) ? ["mouseLockMobile", "mobile", "sidebar", "saveLoad", "lockSwitch"] : ["mouseLockDesktop", "sidebar", "saveLoad", "lockSwitch"];
-            n.Tips = function (e) {
-                const t = e.showTips
-                    , [n, r] = (0,
-                        f.useState)(0);
-                if ((0,
-                    f.useEffect)((() => {
-                        t && r(e.player().autolock ? 0 : 1)
-                    }
-                    ), [t]),
-                    !t)
-                    return null;
-                const i = y[m[n]]
-                    , o = n === m.length - 1;
-                return (0,
-                    p.html)(c || (c = d(['\n    <div class="absolute bg-gray-500 bg-opacity-80 left-0 top-0 right-0 bottom-0 \n        flex flex-col items-center justify-center z-50">\n        <div class="rounded bg-gray-200 shadow-lg w-3/4 sm:w-1/2 p-2 border-b border-gray-800 overflow-auto">\n            <div class="flex row justify-between mb-2">\n                <div class="h-6 w-6 text-gray-400">\n                    <', ' class="h-6 w-6" />\n                </div>\n                <div class="text-lg font-bold">', '</div>\n                <div class="h-6 w-6 cursor-pointer" onClick=', ">\n                    <", ' class="h-6 w-6" />\n                </div>\n            </div>\n            <div class="text-sm px-2 overflow-hidden max-h-72">\n                ', '\n            </div>\n            <div class="flex flex-row justify-center mt-2" onClick=', '>\n                <p class="uppercase cursor-pointer text-blue-900 mr-2">', "</p>\n                ", "\n            </div>\n        </div>\n    </div>\n    "])), h.Icons.InformationCircle, i.title, (() => e.setShowTips(!1)), h.Icons.XCircle, i.tip, (function (t) {
-                        o ? e.setShowTips(!1) : r((n + 1) % m.length),
-                            t.stopPropagation(),
-                            t.preventDefault()
-                    }
-                    ), o ? "Close" : "Next", !o && (0,
-                        p.html)(u || (u = d(['\n                    <div class="h-6 w-6 cursor-pointer text-blue-900">\n                        <', ' class="h-6 w-6" />\n                    </div>'])), h.Icons.ArrowsCircleRight))
-            }
-        }
-            , {
-            "../dom": 151,
-            "../icons": 153,
-            "core-js/modules/web.dom-collections.iterator.js": 118,
-            "preact/hooks": 126
+        //    "use strict";
+        //     var r, i, o, s, a, l, c, u;
+        //     function d(e, t) {
+        //         return t || (t = e.slice(0)),
+        //             Object.freeze(Object.defineProperties(e, {
+        //                 raw: {
+        //                     value: Object.freeze(t)
+        //                 }
+        //             }))
+        //     }
+        //     e("core-js/modules/web.dom-collections.iterator.js"),
+        //         Object.defineProperty(n, "__esModule", {
+        //             value: !0
+        //         }),
+        //         n.Tips = void 0;
+        //     const f = e("preact/hooks")
+        //         , p = e("../dom")
+        //         , h = e("../icons")
+        //         , y = {
+        //         mouseLockMobile: {
+        //             title: "Mouse lock",
+        //             tip: (0,
+        //                 p.html)(r || (r = d(['\n        <div>\n            <div class="flex flex-col">\n                <p class=""> \n                    <strong>This game is controlled by gestures.</strong>\n                </p>\n                <p class="pt-2">\n                    When you tap on screen the MS-DOS game will receive click event without\n                    mouse coordinates. <b>Click will be simulated in place where game cursor \n                    is, without moving it.</b>\n                </p>\n                <p class="pt-2">\n                    <strong>To move the game cursor</strong> you need to put your finger on the screen and move it in\n                    wanted direction until the game cursor reached the desired position. After that\n                    you can release the finger.\n                </p>\n                <p class="pt-2">\n                    You can <strong>change sensitivity</strong> of the mouse inside\n                    submenu of icon <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />.\n                </p>\n            </div>\n        </div>\n        '])), h.Icons.CursorClick)
+        //         },
+        //         mouseLockDesktop: {
+        //             title: "Mouse lock",
+        //             tip: (0,
+        //                 p.html)(i || (i = d(['\n        <div>\n            <div class="flex flex-col">\n                <p class=""> \n                    <strong>The game will lock browser cursor.</strong>\n                </p>\n                <p class="pt-2">\n                    When the mouse is locked MS-DOS game exclusively controls the mouse and\n                    the cursor can\'t leave the game screen. \n                </p>\n                <p class="pt-2">\n                    You can <strong>change sensitivity</strong> of the mouse inside\n                    submenu of icon <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />.\n                </p>\n                <p class="pt-2">\n                    To exit from lock mode please use <strong>Escape</strong> key.\n                </p>\n            </div>\n        </div>\n        '])), h.Icons.CursorClick)
+        //         },
+        //         lockSwitch: {
+        //             title: "Mouse Locking",
+        //             tip: (0,
+        //                 p.html)(o || (o = d(['\n        <div class="flex flex-col">\n            <p class="">\n                By clicking on pointer icon you can switch between <b>regular mouse emulation</b> and <b>lock mode</b>.\n            </p>\n            <div class="mt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    - In regular mouse emulation mode game will receive\n                    borwser pointer coordinates. If the browser pointer and game pointer is out of sync then use\n                </p>\n                <', ' class="h-4 w-4 text-green-600 mx-2 inline-block" />\n                <p class="inline">\n                    refresh control to synchronize dos and browser pointer poistion.\n                </p>\n            </div>\n            <div class="mt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    - lock mouse emulation mode.\n                </p>\n            </div>\n            <div class="mt-2">\n                <strong>On desktop</strong> MS-DOS game exclusively controls the mouse and\n                the cursor can\'t leave the game screen.\n            </div>\n            <div class="mt-2">\n                <strong>On mobile</strong> MS-DOS game will be controlled by gestures.\n            </div>\n        </div>\n        '])), h.Icons.Cursor, h.Icons.Refresh, h.Icons.CursorClick)
+        //         },
+        //         mobile: {
+        //             title: "Mobile Controls",
+        //             tip: (0,
+        //                 p.html)(s || (s = d(['\n        <div class="flex flex-col">\n            <p>\n                You can change visibility of mobile controls by pressing on of this buttons:\n            </p>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  shows the mobile controls if they are provided by the game.\n                </p>\n            </div>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  shows the mobile controls but <strong>mirrored</strong>.\n                </p>\n            </div>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  completely hide the mobile controls.\n                </p>\n            </div>\n            <p class="pt-2">\n                You can <b>change size</b> of mobile controls inside submenu.\n            </p>\n        </div>\n        '])), h.Icons.Mobile, h.Icons.SwithcHorizontal, h.Icons.EyeOff)
+        //         },
+        //         sidebar: {
+        //             title: "Sidebar",
+        //             tip: (0,
+        //                 p.html)(a || (a = d(['\n        <div class="flex flex-col">\n            <div>\n                On the left side of the screen you can see a sidebar, it has a set of useful controls.\n                You can hide it at any time by pressing on the arrow in the middle.\n            </div>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  pause/resume game,\n                </p>\n            </div>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  mute/unmute sound,\n                </p>\n            </div>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  toggle soft keyboard,\n                </p>\n            </div>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  toggle fullscreen,\n                </p>\n            </div>\n            <div class="pt-2">\n                <', ' class="h-4 w-4 text-green-600 mr-2 inline-block" />\n                <p class="inline">\n                    -  will open the settings sidebar, where you can change additional\n                    settings of MS-DOS like networking.\n                </p>\n            </div>\n        </div>\n        '])), h.Icons.Pause, h.Icons.VolumeUp, h.Icons.PencilAlt, h.Icons.ArrowsExpand, h.Icons.DotsHorizontal)
+        //         },
+        //         saveLoad: {
+        //             title: "Save/Load",
+        //             tip: (0,
+        //                 p.html)(l || (l = d(['\n        <div>\n            <div class="flex flex-col">\n                <p class=""> \n                    MS-DOS supports saving and restoring game progress. You can play game from time to time \n                    without losing progress. It\'s working automatically or by pressing \n                    <', ' class="h-4 w-4 text-green-600 mx-1 -mt-1 inline-block" />\n                    icon.\n                </p>\n                <p class="pt-2">\n                    However, it works only if MS-DOS game it self supports save and load commands.\n                    <strong> You need to save your progress in MS-DOS game before stopping emulator.</strong>\n                </p>\n            </div>\n        </div>\n        '])), h.Icons.FloppyDisk)
+        //         }
+        //         }
+        //         , m = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()) ? ["mouseLockMobile", "mobile", "sidebar", "saveLoad", "lockSwitch"] : ["mouseLockDesktop", "sidebar", "saveLoad", "lockSwitch"];
+        //     n.Tips = function (e) {
+        //         const t = e.showTips
+        //             , [n, r] = (0,
+        //                 f.useState)(0);
+        //         if ((0,
+        //             f.useEffect)((() => {
+        //                 t && r(e.player().autolock ? 0 : 1)
+        //             }
+        //             ), [t]),
+        //             !t)
+        //             return null;
+        //         const i = y[m[n]]
+        //             , o = n === m.length - 1;
+        //         return (0,
+        //             p.html)(c || (c = d(['\n    <div class="absolute bg-gray-500 bg-opacity-80 left-0 top-0 right-0 bottom-0 \n        flex flex-col items-center justify-center z-50">\n        <div class="rounded bg-gray-200 shadow-lg w-3/4 sm:w-1/2 p-2 border-b border-gray-800 overflow-auto">\n            <div class="flex row justify-between mb-2">\n                <div class="h-6 w-6 text-gray-400">\n                    <', ' class="h-6 w-6" />\n                </div>\n                <div class="text-lg font-bold">', '</div>\n                <div class="h-6 w-6 cursor-pointer" onClick=', ">\n                    <", ' class="h-6 w-6" />\n                </div>\n            </div>\n            <div class="text-sm px-2 overflow-hidden max-h-72">\n                ', '\n            </div>\n            <div class="flex flex-row justify-center mt-2" onClick=', '>\n                <p class="uppercase cursor-pointer text-blue-900 mr-2">', "</p>\n                ", "\n            </div>\n        </div>\n    </div>\n    "])), h.Icons.InformationCircle, i.title, (() => e.setShowTips(!1)), h.Icons.XCircle, i.tip, (function (t) {
+        //                 o ? e.setShowTips(!1) : r((n + 1) % m.length),
+        //                     t.stopPropagation(),
+        //                     t.preventDefault()
+        //             }
+        //             ), o ? "Close" : "Next", !o && (0,
+        //                 p.html)(u || (u = d(['\n                    <div class="h-6 w-6 cursor-pointer text-blue-900">\n                        <', ' class="h-6 w-6" />\n                    </div>'])), h.Icons.ArrowsCircleRight))
+        //     }
+        // }
+        //     , {
+        //     "../dom": 151,
+        //     "../icons": 153,
+        //     "core-js/modules/web.dom-collections.iterator.js": 118,
+        //     "preact/hooks": 126
         }],
         149: [function (e, t, n) {
             "use strict";
